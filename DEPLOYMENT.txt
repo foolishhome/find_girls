@@ -1,0 +1,10 @@
+1. deploy_code.sh
+在find_girls上一层目录，运行sh deploy_code.sh
+自动打包find_girls传送到服务器，并自动部署
+
+2. unicorn.findgirls
+service for findgirls，复制到/etc/init.d/并改成可执行的
+
+3. nginx.conf
+nginx配置
+
