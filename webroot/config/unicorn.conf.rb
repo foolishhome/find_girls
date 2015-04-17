@@ -26,7 +26,7 @@ end
 
 # Help ensure your application will always spawn in the symlinked
 # "current" directory that Capistrano sets up.
-working_directory "/webapp/find_girls/" # available in 0.94.0+
+working_directory "/webapp/find_girls/webroot" # available in 0.94.0+
 
 # listen on both a Unix domain socket and a TCP port,
 # we use a shorter backlog for quicker failover when busy

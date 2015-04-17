@@ -6,7 +6,7 @@ set -e
 
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/webapp/find_girls
+APP_ROOT=/webapp/find_girls/webroot
 PID=/tmp/find_girls_unicorn.pid
 ENV=production
 #CMD="sudo bundle exec unicorn_rails -E $ENV -D -c $APP_ROOT/config/unicorn.conf.rb"
