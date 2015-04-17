@@ -1,6 +1,6 @@
 module FindGirls
   class App < Padrino::Application
-    register SassInitializer
+    register ScssInitializer
     use ConnectionPoolManagement
     register Padrino::Mailer
     register Padrino::Helpers
