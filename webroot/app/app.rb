@@ -5,6 +5,21 @@ module FindGirls
     register Padrino::Mailer
     register Padrino::Helpers
 
+    set :root, File.dirname(__FILE__) # You must set app root
+    register Sinatra::AssetPack
+
+    assets {
+      serve '/css',    from: 'assets/stylesheets'       # Default
+
+      css :application, '/css/application.css', [
+                          '/css/index.css',
+                          '/css/girls.css'
+                      ]
+
+      js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+      css_compression :sass   # :simple | :sass | :yui | :sqwish
+    }
+
     enable :sessions
 
     ##

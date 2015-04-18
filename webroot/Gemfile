@@ -15,7 +15,10 @@ gem 'rake'
 
 # Component requirements
 gem 'bcrypt'
+
 gem 'sass'
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
+
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', '>= 4.0', :require => 'active_record'
 gem 'sqlite3'
