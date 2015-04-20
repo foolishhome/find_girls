@@ -21,7 +21,7 @@ cmd (){
 }
 
 sig (){
-        test -s "$PID" && kill -s $1 `$(cat $PID)`
+        test -s "$PID" && kill -s $1 `cat $PID`
 }
 
 oldsig (){

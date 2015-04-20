@@ -9,7 +9,14 @@ module FindGirls
     register Sinatra::AssetPack
 
     assets {
-      serve '/css',    from: 'assets/stylesheets'       # Default
+      serve '/js',    from: 'assets/javascripts'       # Default
+      serve '/css',   from: 'assets/stylesheets'       # Default
+
+      js :app, '/js/app.js', [
+                 '/js/jquery.js',
+                 '/js/common.js',
+                 '/js/iframe.js'
+             ]
 
       css :application, '/css/application.css', [
                           '/css/index.css',
