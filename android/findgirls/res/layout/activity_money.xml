@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="45dp"
+            android:background="@color/tab_buttom_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="10dp"
+            android:background="@color/white"
+            android:id="@+id/rl_tongbi"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/med_font_size"
+                android:textColor="@color/black"
+                android:text="@string/str_tongB_release"
+                android:layout_centerVertical="true"
+                android:id="@+id/tongbi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/med_font_size"
+                android:textColor="#ff1ee1b1"
+                android:text="0"
+                android:id="@+id/tongbiText"
+                android:layout_alignTop="@+id/tongbi"
+                android:layout_marginLeft="120dp"
+                android:layout_toLeftOf="@+id/imageViewTongbi"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewTongbi"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_buttom_line"
+            android:layout_marginLeft="22dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_signature"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="44dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/med_font_size"
+                android:textColor="@color/black"
+                android:text="@string/str_YB_release"
+                android:id="@+id/Ybi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/med_font_size"
+                android:textColor="#ff1ee1b1"
+                android:text="0"
+                android:id="@+id/ybiText"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_buttom_line"/>
+
+    </LinearLayout>
+
+</ScrollView>

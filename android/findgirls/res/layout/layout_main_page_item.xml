@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/selectable_item_white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <com.yy.a.widget.HeightMatchWidthImageView
+            android:id="@+id/iv_thumb"
+            android:scaleType="centerCrop"
+            android:layout_width="64dp"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:src="@drawable/logo_grey"
+             />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:minWidth="465dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="23dp"
+                    android:singleLine="true"
+                    android:text="李时珍"
+                    android:fontFamily="Microsoft Yahei"
+                    android:textSize="16dp"
+                    android:id="@+id/tv_channelName"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:background="@drawable/bg_shape_subsribe"
+                    android:layout_width="68dp"
+                    android:layout_height="25dp"
+                    android:textSize="13dp"
+                    android:text="预订"
+                    android:textColor="#FFFFFFFF"
+                    android:id="@+id/btn_book"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_time"
+                    android:src="@drawable/bfsj"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    style="@style/LiveListTextView"
+                    android:gravity="left"
+                    android:text="10:10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tv_time"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_width="120dp"
+                    android:ellipsize="end"
+                    android:layout_toRightOf="@+id/img_time"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_doctor"
+                    android:src="@drawable/user_hot_little"
+                    android:layout_toRightOf="@+id/tv_time"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="999人"
+                    android:textSize="14dp"
+                    android:textColor="#FFA8A8A8"
+                    android:fontFamily="华文细黑"
+                    android:id="@+id/tv_user_count"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@+id/img_doctor"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:minWidth="69dp"
+                    android:gravity="center"
+                    style="@style/LiveListTextView"
+                    android:text="100人已订"
+                    android:id="@+id/bookCount"
+                    android:layout_toRightOf="@+id/tv_time"
+                    android:layout_marginLeft="50dp"
+                    android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/tab_buttom_line"/>
+</LinearLayout>

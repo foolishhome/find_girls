@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<com.yy.a.widget.ImeAwareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/ime_activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:keepScreenOn="true"
+    android:animateLayoutChanges="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/fragment_channel_media"
+            android:tag="ChannelMedia"
+            android:name="com.yy.medical.activity.channel.ChannelMediaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_channel_list_bg"
+            android:visibility="invisible"
+            android:layout_below="@id/fragment_channel_media"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/fragment_channel_media"
+            android:id="@+id/fragment_channel_list">
+            <com.yy.a.widget.PagerSlidingTabStrip
+                android:id="@+id/tabs_function"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:pstsIndicatorColor="@color/tab_select_text"
+                app:pstsShouldExpand="true"
+                android:background="@drawable/page_tab_bg"
+                app:pstsTabBackground="@drawable/selectable_item"
+                app:pstsTabPaddingLeftRight="14dip"
+                app:pstsUnderlineHeight="1sp"
+                app:pstsIndicatorHeight="4dp"
+                app:pstsDividerColor="@color/tranparent"
+                app:pstsUnderlineColor="@color/tab_buttom_line"
+                />
+
+            <com.yy.a.widget.SwipeControllableViewPager
+                android:id="@+id/vp_function"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tabs_function"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/image_activity"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <com.yy.medical.widget.ResizeRelativeLayout
+            android:id="@+id/rrl_gift_animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/fragment_channel_list"/>
+
+    </RelativeLayout>
+</com.yy.a.widget.ImeAwareRelativeLayout>

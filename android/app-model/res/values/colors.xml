@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="clear">#00FFFFFF</color>
+    <color name="gift_grade0">#ff0000</color>
+    <color name="gift_grade1">#2fb42b</color>
+    <color name="gift_grade2">#21a21e</color>
+    <color name="gift_grade3">#2fa5f7</color>
+    <color name="gift_grade4">#0f88dd</color>
+    <color name="gift_grade5">#e700ad</color>
+    <color name="gift_grade6">#e700ad</color>
+</resources>

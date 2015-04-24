@@ -1,0 +1,620 @@
+﻿<resources>
+
+    <string name="app_name">网医</string>
+    <string name="joining_channel">正在进入频道&#8230;</string>
+    <string name="content_desc"></string>
+    <string name="test_video_restart">Restart</string>
+    <string name="test_video_pause">Pause</string>
+    <string name="file_downloading">文件下载中</string>
+
+    <string name="kindly_tip">温馨提示</string>
+    <string name="network_tip">你正处于2G/3G网络下，耗费流量较大，建议WIFI下观看</string>
+    <string name="network_disconnect_tips">无网络链接，请检查您的网络情况！</string>
+    <string name="stay_watch">继续观看</string>
+    <string name="cancel">取消</string>
+
+    <string name="live">直播</string>
+    <string name="livelist">节目列表</string>
+    <string name="message">消息</string>
+    <string name="ask">咨询</string>
+    <string name="my">我</string>
+    <string name="login_yy">登录YY帐号</string>
+    <string name="login">登录</string>
+    <string name="str_img_again">看不清换一张</string>
+    <string name="register">注册帐号</string>
+    <string name="password">密码</string>
+    <string name="new_account">新帐号</string>
+    <string name="picture_code">验证码</string>
+    <string name="str_noIdentifyCode">请输入验证码</string>
+    <string name="str_picture_code">输入验证码</string>
+    <string name="password_with_space">密 码</string>
+    <string name="register_now">立即注册</string>
+    <string name="new_account_error">帐号应由4-16位小写字母与数字组合，请重新输入</string>
+    <string name="new_password_error">密码应为6-20位字母、数字与符号，区分大小写，请重新输入</string>
+    <string name="new_account_requirement">4-16位，由小写字母、数字组合</string>
+    <string name="new_password_requirement">6-20位字母、数字与符号，区分大小写</string>
+    <string name="pic_code_describe">右侧图片点击可更换</string>
+    <string name="register_agreement">点击上面的“立即注册”按钮，即表示您同意《YY医药软件许可及服务协议》</string>
+    <string name="register_error">注册失败……，请重新尝试</string>
+    <string name="register_input_pic_code">请输入验证码</string>
+    <string name="register_succeed">注册成功</string>
+    <string name="register_time_out">请求超时，请稍后在试</string>
+    <string name="register_succeed_and_loading">注册成功，登录中</string>
+    <string name="register_params_error">用户名或密码无效</string>
+    <string name="register_pic_code_error">验证码错误</string>
+    <string name="register_registered_error">该账户已被注册</string>
+    <string name="login_error">帐号或密码错误，请重新输入</string>
+
+    <string name="add_contact">添加好友/群</string>
+    <string name="buddy_detail">详细资料</string>
+    <string name="forum_detail">群资料</string>
+    <string name="search_buddy">搜索号码添加好友</string>
+    <string name="input_buddy_uid">输入YY号</string>
+    <string name="search_forum">添加群</string>
+    <string name="input_forum_uid">输入群号</string>
+    <string name="add_self_as_buddy">不能添加自己为好友</string>
+    <string name="buddy_searching">查找中</string>
+    <string name="invalid_imid">查询不到Y友信息</string>
+    <string name="have_been_friend">你们已经是好友</string>
+    <string name="add_buddy">加为好友</string>
+    <string name="buddy_adding">处理中</string>
+    <string name="in_blacklist">已被加入黑名单</string>
+    <string name="try_too_much_today">尝试次数过多</string>
+    <string name="too_many_friend_for_me">好友列表已满</string>
+    <string name="too_many_friend_for_buddy">对方好友列表已满</string>
+    <string name="need_more_exp">对方要求你积分达到[%d]才允许添加</string>
+    <string name="max_length_character">最多可输入%d个字符</string>
+    <string name="fail_to_add_buddy">添加失败</string>
+    <string name="buddy_reject_all">对方拒绝添加好友</string>
+    <string name="succeed_to_add_friends">添加好友成功</string>
+    <string name="enter">确定</string>
+    <string name="complete">完成</string>
+    <string name="verify_adding_title">对方启用了身份验证</string>
+    <string name="verify_adding_message">你需要发送验证申请，对方通过后你才能添加其为好友</string>
+    <string name="verify_update_title">保存修改</string>
+    <string name="verify_update_success">验证方式修改成功</string>
+    <string name="answer_adding_title">请回答TA的验证问题</string>
+    <string name="answer_error">回答错误</string>
+    <string name="add_info_send">请求发送成功</string>
+    <string name="str_add_budy_succ">已成功发送添加好友请求\n如果对方处理了您的请求，我们会发系统消息通知您</string>
+    <string name="forum_not_found">查找的Y群不存在</string>
+    <string name="add_forum">加入该群</string>
+    <string name="forum_already_joined">你已经是该群的成员，无需再次添加</string>
+    <string name="forum_disallow_anyone">该群不允许任何人加入</string>
+    <string name="join_forum_success">你已成功加入该群</string>
+    <string name="join_forum_request_sending">正在发送加群请求</string>
+    <string name="join_forum_request_sent">你已经成功发送加群请求。\n如果对方处理了您的请求，我们会发系统消息通知您</string>
+    <string name="join_forum_request_fail">加群请求发送失败，请重试...</string>
+    <string name="join_forum_failed_need_majia">该群需要指定频道的马甲才能加入</string>
+    <string name="forum_need_auth_message">创建人需要验证您的身份，请输入您的验证信息：</string>
+    <string name="agree">同意</string>
+
+    <string name="str_imid" formatted="false">YY号：%d</string>
+    <string name="str_experience">积分:%d</string>
+    <string name="str_level">等级:%d</string>
+    <string name="personal_info">帐号</string>
+    <string name="female">女</string>
+    <string name="male">男</string>
+    <string name="str_birth_format" formatted="false">%d年%02d月%02d日</string>
+    <string name="choose_site">选择所在地</string>
+    <string name="choose_provice">选择省份</string>
+    <string name="choose_city">选择城市</string>
+    <string name="choose_gender">选择性别</string>
+    <string name="account">输入YY帐号</string>
+    <string name="signeture">个性签名</string>
+    <string name="portrait">头像</string>
+    <string name="my_video">我的录制</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="name">名字</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="birthday">生日</string>
+    <string name="site">所在地</string>
+    <string name="imid">YY号</string>
+    <string name="level">等级</string>
+    <string name="experience">积分</string>
+    <string name="yesterday_experience">您昨天在YY医药获赠的积分</string>
+    <string name="YB">Y币:</string>
+    <string name="flower">鲜花</string>
+    <string name="choose_photo">选择照片</string>
+    <string name="edit_photo">编辑图片</string>
+    <string name="str_upload_portrait_failed">上传头像失败</string>
+    <string name="str_upload_portrait_success">上传头像成功</string>
+    <string name="str_upload">上传</string>
+
+    <string name="flower_lack">对不起，鲜花数量不足！您还有%d秒就可以获得1朵鲜花！</string>
+
+
+    <string name="has_no_follow_doctor">您还没有关注过医生</string>
+
+    <string name="str_image_msg">图片消息</string>
+
+    <string name="str_voice_msg">语音消息</string>
+
+    <string name="str_title_edit_nickname">编辑昵称</string>
+    <string name="str_title_edit_signature">编辑签名</string>
+
+    <string name="dummy_content_desc">dummy content description</string>
+    <string name="remove_account">清除帐号</string>
+    <string name="remove_account_message">确定从列表中删除帐号: %s 吗？</string>
+    <string name="remove">删除</string>
+
+    <string name="my_video_remove_success">刪除成功</string>
+    <string name="my_video_remove_fail">刪除失败</string>
+    <string name="my_video_removing">刪除中</string>
+
+    <!--im chat-->
+    <string name="btn_send">发送</string>
+    <string name="chat_photo">照片</string>
+    <string name="chat_camera">拍摄</string>
+    <string name="str_resent_image_msg">图片发送中</string>
+    <string name="str_start_resent_image_msg">重新发送图片</string>
+    <string name="str_connect_retry_gentle">网络不太给力哦，正在努力连接中……</string>
+    <string name="str_net_connect_error">网络连接失败，请稍后重试</string>
+    <string name="logining">登录中</string>
+    <string name="contacts">好友</string>
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="passcard">通行证</string>
+
+    <string name="str_delete_from_list">从列表中删除</string>
+    <string name="ctx_edit_title">编辑</string>
+    <string name="ctx_copy_from_list">复制文本</string>
+    <string name="ctx_delete_from_list">删除消息</string>
+    <string name="ctx_copy_success_from_list">已复制</string>
+    <string name="ctx_del_msg_reminder">确定要删除此消息吗？</string>
+    <string name="btn_delete">删除</string>
+    <string name="str_delete_from_system_list">删除</string>
+    <string name="press_to_record_voice">按住 说话</string>
+    <string name="release_to_end">松开 结束</string>
+    <string name="fling_up_to_cancel">手指上滑取消发送</string>
+    <string name="up_to_cancel">手指松开取消发送</string>
+    <string name="voice_canceled">语音信息已取消</string>
+    <string name="voice_record_failed">录音出错</string>
+    <string name="search_buddy_forum">搜索好友或群</string>
+    <string name="search_buddy_forum_tip">未查找到</string>
+    <string name="logout">退出当前帐号</string>
+    <string name="search_video">请输入您想要咨询的问题</string>
+    <string name="search_channel_hint">搜索</string>
+    <string name="enter_some_channel">进入频道: %s</string>
+    <string name="search_some_channel">搜索直播间: %s</string>
+    <string name="recent_search">最近搜索</string>
+    <string name="recent_visit">最近访问</string>
+    <string name="fmt_room_number">ID: %d</string>
+    <string name="fmt_fans">粉丝: %s</string>
+    <string name="fmt_flowers">鲜花: %s</string>
+
+    <string name="pay_charge_yb">Y币充值</string>
+    <string name="pay_account_money">账户余额</string>
+    <string name="pay_type">支付类型</string>
+    <string name="pay_type_telephone">手机支付</string>
+    <string name="pay_charge_quick">立即充值</string>
+    <string name="pay_charging">充值中，请稍候...</string>
+
+    <string name="str_live">直播中</string>
+    <string name="str_mychannel">我的频道</string>
+    <string name="str_myRMBBag">我的钱包</string>
+    <string name="str_RBM_remainder">帐户余额</string>
+    <string name="str_myYB">Y币余额</string>
+    <string name="str_scanner">扫一扫</string>
+    <string name="str_otherchannel">Ta的频道</string>
+    <string name="str_other_parttake_channel">Ta的频道</string>
+    <string name="str_collection_channel">我的收藏</string>
+    <string name="str_recent_channel">最近访问</string>
+    <string name="str_chongzhi">充值</string>
+    <string name="str_tongB">铜币:</string>
+    <string name="str_tongB_release">铜币余额</string>
+    <string name="str_YB_release">Y币余额</string>
+    <string name="str_my_follow">我的关注</string>
+    <string name="str_department">科室</string>
+    <string name="record_fail">录制失败</string>
+    <string name="tip_stop_record">是否停止录制</string>
+    <string name="str_clear">清空</string>
+    <string name="menu_sub_channel">切换子频道</string>
+    <string name="tip_no_video">暂时没有人在直播哦</string>
+    <string name="menu_pause">暂停</string>
+    <string name="menu_hook">挂机</string>
+    <string name="menu_play">播放</string>
+    <string name="str_on_hook">挂机中</string>
+    <string name="tip_fobbid_flower">管理员已禁止在公屏赠送鲜花</string>
+    <string name="menu_full_screen">全屏</string>
+    <string name="menu_audio_only">只听声音</string>
+    <string name="menu_audio_only_off">同步视频</string>
+    <string name="menu_quit">退出</string>
+    <string name="menu_copy">复制</string>
+    <string name="menu_url">打开链接</string>
+    <string name="title_send_fail">信息发送失败</string>
+    <string name="menu_resend">重新发送</string>
+    <string name="menu_confirm_channel">点击进入 %d 频道</string>
+    <string name="str_channel">频道</string>
+    <string name="menu_title_ticket">飞机票</string>
+    <string name="expand">展开</string>
+    <string name="collapse">收起</string>
+    <string name="category">导航</string>
+
+    <string name="base_setting">基本设置</string>
+    <string name="setting">设置</string>
+    <string name="str_setting_notification">消息提醒</string>
+    <string name="str_setting_buddy_validation">好友验证</string>
+    <string name="str_setting_suggestion">建议反馈</string>
+    <string name="str_version">版本</string>
+    <string name="str_update">更新</string>
+    <string name="str_receive_notify">接受消息推送</string>
+    <string name="str_notify_sound">消息提示音</string>
+    <string name="str_notify_vibration">消息震动</string>
+    <string name="str_buddy_validation">好友验证</string>
+    <string name="str_buddy_authentication">需要填写验证信息</string>
+    <string name="str_buddy_refuse_anyone">拒绝任何人添加</string>
+    <string name="tabs">内容导航</string>
+    <string name="save_success">图片保存成功!</string>
+    <string name="save_fail">图片保存失败</string>
+    <string name="str_min_exp">要求最低积分：</string>
+    <string name="str_buddy_need_much_exp">设置积分限制</string>
+    <string name="str_need_answer_que">需要回答问题</string>
+    <string name="str_search_time_out">查找超时</string>
+
+    <string name="str_question">问题：</string>
+    <string name="str_answer">答案：</string>
+    <string name="answer_review">需要正确回答问题并由我审阅</string>
+    <string name="str_my_hometown">我的家乡是？</string>
+    <string name="str_my_name">我的真实姓名？</string>
+    <string name="str_my_game_occupation">我的游戏职业</string>
+    <string name="str_my_mobile_number">我的手机号码？</string>
+    <string name="nocontent">没有内容</string>
+    <string name="channel_chat">聊天</string>
+    <string name="channel_audience">观众</string>
+    <string name="channel_audience_with_count">在线(%s)</string>
+    <string name="channel_concern">订阅</string>
+    <string name="str_submit">提交</string>
+    <string name="str_input_exceed_min">输入不能小于%s个字数</string>
+    <string name="str_input_exceed_max">输入不能大于大%s个字数</string>
+    <string name="retry">重试</string>
+    <string name="load_fail">加载失败,</string>
+    <string name="no_message">没有消息</string>
+    <string name="filter_medical_app_pre_word">【网医】</string>
+    <string name="str_system">温馨提示</string>
+    <string name="str_doctor_tip">医生建议仅供参考，详细诊断请前往医院问诊！</string>
+
+    <string name="str_input_your_suggestion">请输入您遇到的问题或者建议，我们将竭力改进，提供更优质的服务！</string>
+    <string name="str_channel_id">%d</string>
+    <string name="str_min_exp_cannot_null">积分必须是大于0的数字</string>
+    <string name="str_answer_cannot_null">答案不能未空</string>
+    <string name="more">更多</string>
+    <string name="role_all">所有成员</string>
+    <string name="role_manager">管理员</string>
+    <string name="role_normal">普通观众</string>
+    <string name="action_collect_channel">订阅TA</string>
+    <string name="action_record">录制</string>
+    <string name="action_recording">录制中</string>
+    <string name="action_artist_profile">医生资料</string>
+    <string name="forum_notice_setting_title">群消息设置</string>
+    <string name="forum_setting_receive_notice">接收提醒</string>
+    <string name="forum_setting_show_number_only">不提醒仅显示数目</string>
+    <string name="forum_setting_do_not_notice">不提醒</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="resend">重发</string>
+    <string name="resendTips">重发该消息？</string>
+    <string name="sub_channel_password_dialog_title">请输入子频道密码</string>
+    <string name="channel_guest_denied">此频道禁止游客进入</string>
+    <string name="channel_password_incorrect">密码错误</string>
+    <string name="channel_access_denied">你没有进入这个频道的权限</string>
+    <string name="channel_top_denied">不允许游客或嘉宾进入顶级频道</string>
+    <string name="channel_sub_full">频道人数已达到上限，请稍后再试</string>
+    <string name="channel_kick_up">您已被管理员踢出频道！</string>
+    <string name="channel_kick_out">您已被管理员踢出频道！</string>
+    <string name="channel_ban_ip">您被该频道封了IP，请联系频道管理员！</string>
+    <string name="channel_ban_id">您被该频道封了ID，请联系频道管理员！</string>
+    <string name="channel_unknown_error">系统发生错误</string>
+    <string name="channel_change_sub_failed">跳转子频道失败</string>
+    <string name="action_channel_collected">取消订阅</string>
+    <string name="title_tips">提示</string>
+    <string name="message_kick_other_client_confirm">是否确认进入频道，并让其他设备端退出所在频道？</string>
+    <string name="btn_confirm_enter">确认进入</string>
+    <string name="title_multiple_client">多点登录</string>
+    <string name="message_channel_kicked_by_self">您已在其他终端进入频道，手机端已退出频道。</string>
+    <string name="btn_got_it">我知道了</string>
+    <string name="err_unknown_login_error">连接服务器失败</string>
+    <string name="err_session_congest">网络拥挤，请稍后再试</string>
+    <string name="err_session_frozen">频道已冻结</string>
+    <string name="err_session_full">频道人数已达到上限，请稍后再试</string>
+    <string name="err_session_not_exist">频道不存在</string>
+    <string name="err_session_removed">频道已删除</string>
+    <string name="message_resend">是否重发该消息</string>
+    <string name="remove_some_friend">确认删除好友</string>
+
+    <string name="str_count">数量:</string>
+    <string name="str_send_gift">赠 送</string>
+    <string name="free_gift_unvailable_tip" formatted="false">亲，还有%d秒才可以送噢</string>
+    <string name="str_input_gift_amount_hint">输入赠送数量，至多%d</string>
+    <string name="str_gift_amount_exceeded_toast">一次至多送%d个礼物哦</string>
+    <string name="str_gift_amount_other">其它数量</string>
+    <string name="str_gift_amount_1314">一生一世</string>
+    <string name="str_gift_amount_520">我爱你</string>
+    <string name="str_gift_amount_188">要抱抱</string>
+    <string name="str_gift_amount_66">一切顺利</string>
+    <string name="str_gift_amount_30">想你&#8230;</string>
+    <string name="str_gift_amount_10">十全十美</string>
+    <string name="str_gift_amount_1">一心一意</string>
+    <string name="str_nobody_on_mic">当前麦上无人</string>
+    <string name="str_send_gift_confirm_msg" formatted="false">赠送%d个%s，将消耗您%.1fY币，是否同意支付？</string>
+    <string name="str_have_to_choose_a_gift">请选择您要赠送的礼物</string>
+    <string name="str_send_gift_text_format" formatted="false">%s 送{%d}%d</string>
+    <string name="gift_list_loading">礼物加载中</string>
+    <string name="gift_list_load_complete">礼物加载完毕</string>
+    <string name="gift_list_load_fail">礼物加载失败</string>
+    <string name="empty_gift_amount_text">数量不能为0噢</string>
+    <string name="string_recharge">充值</string>
+    <string name="string_send_gift">确定</string>
+    <string name="str_general_send_gift_title">温馨提示</string>
+
+    <string name="stringanother_pay_way">其他方式</string>
+    <string name="string_gift_eroror_send_self">不能把礼物送给自己哦</string>
+    <string name="string_gift_eroror_head_mic">你赠送的歌手不在首麦</string>
+    <string name="string_gift_eroror_send_failed">赠送失败</string>
+    <string name="string_gift_eroror_gift_not_use">礼物已经下架</string>
+    <string name="string_gift_eroror_no_bind">抱歉，绑定密保手机后才能赠送月票哦</string>
+    <string name="str_gift_error_not_a_singer">对不起，月票只能送给签约歌手哦~选择其他礼物赠送吧！</string>
+    <string name="str_not_enough_money">你的账户余额不足，请充值后再赠送</string>
+    <string name="str_vote_limit">每轮最多投10张，你可以下一轮再支持他</string>
+    <string name="str_send_free_limit">你今天送得太多了</string>
+    <string name="str_too_frequently">操作过于频繁</string>
+    <string name="str_system_error">系统错误</string>
+    <string name="str_user_not_in_match">对象不在比赛中</string>
+    <string name="str_vote_already_end">投票已经结束</string>
+    <string name="string_money_not_enough">您的账户余额不足，请充值后再赠送</string>
+
+    <string name="detail">个人资料</string>
+    <string name="doctor_profile">医生资料</string>
+    <string name="consult">咨询</string>
+    <string name="follow_anchor">关注主播</string>
+    <string name="follow">关注</string>
+    <string name="unfollow">取消关注</string>
+    <string name="succeed_to_follow">关注成功</string>
+    <string name="fail_to_follow">关注失败</string>
+    <string name="succeed_to_unfollow">取消关注成功</string>
+    <string name="fail_to_unfollow">取消关注失败</string>
+    <string name="fail_to_remove">删除失败</string>
+    <string name="fans_count" formatted="false">%d位粉丝</string>
+    <string name="living_channel">正在%d频道直播中</string>
+    <string name="speak">发言</string>
+    <string name="speaking">发言中</string>
+    <string name="queue_for_mic">排麦</string>
+    <string name="in_mic_queue">排麦中</string>
+    <string name="admin_control_mic">管理员控麦</string>
+    <string name="start_conversation">开始会话</string>
+    <string name="shield_user">屏蔽此人</string>
+    <string name="unshield_user">解除屏蔽</string>
+    <string name="report_user">举报此人</string>
+    <string name="report_succeed">举报成功</string>
+    <string name="cpu_error_notification">手机当前性能不足,不能保证观看</string>
+    <string name="title_error">错误</string>
+    <string name="title_sorry">抱歉</string>
+    <string name="update_error">获取更新失败，请稍后重试&#823;</string>
+    <string name="update_no_need">已是最新版本</string>
+    <string name="video_search_no_content">未所搜到任何视频，请更改搜索内容重新搜索</string>
+    <string name="friend_detail">好友资料</string>
+    <string name="confirm_clear_all_recent_channel">清除最近访问</string>
+    <string name="recent_channel_empty">没有最近访问记录</string>
+    <string name="confirm_clear_cache">确认清除缓存</string>
+    <string name="record_too_short">录音时间太短</string>
+    <string name="no_role_content">当前无任何频道</string>
+    <string name="no_recent_channel_content">没有最近频道访问记录</string>
+    <string name="no_collect_channel_content">没有收藏频道记录</string>
+    <string name="mute_audio_off">关闭声音</string>
+    <string name="mute_audio_on">打开声音</string>
+    <string name="str_video_duration" formatted="false">时长：%02d:%02d</string>
+    <string name="str_video_duration_long" formatted="false">时长：%02d:%02d:%02d</string>
+
+    <string name="str_exit_app">退出网医</string>
+    <string name="str_exit_account">退出登录</string>
+    <string name="str_exit_tips">再次点击退出网医</string>
+    <string name="channel_number" formatted="false">频道号：%d</string>
+    <string name="no_live_tips">直播未开始</string>
+    <string name="str_please_slow_down">您说话太快了，请休息一会吧</string>
+    <string name="voice_message_play_failure">语音信息播放失败</string>
+    <string name="down_last_version">下载最新版本</string>
+    <string name="version_update">版本更新</string>
+    <string name="login_state_online">在线</string>
+    <string name="login_state_hide">隐身</string>
+    <string name="login_state_changed">状态切换</string>
+    <string name="forgot_pwd">忘记密码</string>
+    <string name="fail_to_select_photo">选取图片失败</string>
+
+    <!-- payment -->
+    <string name="pay_format_string_balance" formatted="false">%f\u0020Y币</string>
+    <string name="pay_format_string_custom_product_name" formatted="false">%s\u0020Y币</string>
+    <string name="pay_format_string_product_name" formatted="false">充值%s\u0020元,可获得%s</string>
+    <string name="pay_balance_tip">充值：</string>
+    <string name="pay_format_own_cost" formatted="false">%sY币</string>
+    <string name="pay_CNY">元</string>
+    <string name="pay_title">Y币充值</string>
+    <string name="pay_tongB">充值铜币</string>
+    <string name="pay_input_money">请输入其他金额</string>
+    <string name="pay_charge_account">充值账号:</string>
+    <string name="pay_charge_amount">充值金额:</string>
+    <string name="pay_charge_cost">应付金额:</string>
+    <string name="pay_charge_method">充值方式:</string>
+    <string name="pay_telephone_charge">扣除话费:</string>
+    <string name="pay_telephone_number">手机号码:</string>
+    <string name="pay_custom_recharge">其他金额</string>
+    <string name="pay_type_aliquicklypay">支付宝快捷充值</string>
+    <string name="pay_type_alipay">支付宝网页充值</string>
+    <string name="pay_type_yinlian">银联充值</string>
+    <string name="pay_type_yinlian_detail">(支持储蓄卡、信用卡)</string>
+    <string name="pay_type_sms">短信支付</string>
+    <string name="pay_type_sms_detail">(支持移动、电信用户)</string>
+    <string name="pay_input_tip">输入金额，最大 %d 元</string>
+    <string name="pay_query">正在查询</string>
+    <string name="pay_error_invalid">请输入有效的充值金额</string>
+    <string name="pay_error_oversize" formatted="false">抱歉，%s一次只能最多充值%d元</string>
+    <string name="pay_error_oversize_alipay">抱歉，支付宝一次只能最多充值5000元</string>
+    <string name="pay_error_oversize_yinlian">抱歉，银联一次只能最多充值500元</string>
+    <string name="pay_pls_choose_one_pay_type">请选择一种支付方式</string>
+    <string name="pay_request_recharge_order">正在生成支付订单，请稍候</string>
+    <string name="pay_recharge_order_success">充值成功</string>
+    <string name="pay_server_error">服务器异常，请稍候重试</string>
+    <string name="pay_send_fail">发送失败</string>
+    <string name="pay_send_sms">发送短信</string>
+    <string name="pay_send_sms_invite">发送短信邀请</string>
+    <string name="pay_sending_sms">正在发送短信&#8230;</string>
+    <string name="pay_sms_pay_msg" formatted="false">请用手机：%s编辑：%s发送到：%s</string>
+    <string name="str_input_your_tel_num">请输入您的手机号码</string>
+
+    <string name="scanner_result_text">扫描结果</string>
+
+    <string name="network_error">本地无可用网络，请检测网络设置</string>
+    <string name="do_not_support_CUCC">当前运营商暂不支持充值</string>
+    <string name="no_sim_card">当前没有手机卡</string>
+    <string name="unknown_sim">该手机号暂不支持短信充值</string>
+
+    <string name="str_loading_data">正在加载数据&#8230;</string>
+    <string name="new_snapshot">发现新内测版R%d,是否下载?</string>
+    <string name="forum_info">群资料</string>
+    <string name="forum_nick_name">群昵称</string>
+    <string name="forum_number">群号码:%d</string>
+    <string name="edit_forum_nick_name">编辑群昵称</string>
+    <string name="forum_intro">群简介</string>
+    <string name="menu">菜单</string>
+    <string name="forum_announcement">群公告</string>
+    <string name="clear_chat_history">清空聊天记录</string>
+    <string name="delete_success">删除成功</string>
+    <string name="confirm_quit_forum">确认退出该群</string>
+    <string name="quit_forum_success">您已成功退出该群</string>
+    <string name="quit_forum">退出该群</string>
+    <string name="group_forum">全体成员组</string>
+
+    <string name="enter_channel">进入</string>
+
+    <string name="confirm_del_recent_search">确认删除最近搜索记录</string>
+    <string name="tip_confirm_del">确认删除</string>
+
+    <string name="first_stop_record">录制完成，您可以在 “我的录制” 中查看</string>
+    <string name="forum_message_setting">群消息设置</string>
+
+    <string name="btn_send_photos">发送(%d)</string>
+    <string name="catalog_photo_number">共%d张</string>
+    <string name="all_photos">所有图片</string>
+    <string name="cant_open_url">系统无法打开网址</string>
+    <string name="video_processing">视频转码中</string>
+    <string name="video_examing">视频审核中</string>
+    <string name="video_process_fail">视频转码失败</string>
+    <string name="subscribe_op_yes">预订</string>
+    <string name="subscribe_op_no">取消预订</string>
+
+    <string name="buyanduse_gift_success">消费道具</string>
+    <string name="buyanduse_gift_notenoughmoney">账号余额不足</string>
+    <string name="buyanduse_gift_queryfail">请求失败</string>
+    <string name="str_chongzhi_tongBi">铜币充值</string>
+    <string name="str_account_remainder">帐户余额</string>
+    <string name="buy_consult_success">消费咨询</string>
+    <string name="buy_consult_queryfail">咨询请求失败</string>
+
+    <string name="btn_talk_down_text">松开结束</string>
+    <string name="btn_talk_up_text">按住可发言</string>
+    <string name="btn_call_handup">连线</string>
+    <string name="btn_call_handdown">挂断</string>
+    <string name="my_doctors_list">我关注的医生</string>
+    <string name="department_search_result">搜索结果</string>
+
+
+
+    <string name="logout_state_tips">登录后才可以查看个人资料哦</string>
+    <string name="sendgifmsg">%1$s赠送 {%2$d} x%3$d</string>
+
+    <string name="consult_default_name">名字 职称</string>
+    <string name="consult_hospital">医院</string>
+    <string name="doctor_profile_default_name">名字</string>
+    <string name="doctor_profile_hospital">医院</string>
+    <string name="doctor_profile_identified">已认证</string>
+    <string name="doctor_profile_apply_private_doctor">开通私人医生</string>
+    <string name="apply_private_doctor">开通私人医生服务</string>
+    <string name="apply_private_doctor_note">开通私人医生即可添加医生为好友，享受一对一的定制化服务，请选择要开通的服务。</string>
+    <string name="apply_private_doctor_for_a_week">一 周 500元</string>
+    <string name="apply_private_doctor_for_a_month">一个月 1000元</string>
+    <string name="apply_private_doctor_for_a_quater">三个月 2888元</string>
+    <string name="apply_private_doctor_for_half_year">半年 2888元</string>
+    <string name="apply_private_doctor_for_a_year">一年 11688元</string>
+
+    <string name="item_finish_tips">问题已解决，点击关闭问题！</string>
+    <string name="item_patient_waiting_tips_1">请耐心等待，正在为您匹配医生</string>
+    <string name="item_patient_waiting_tips_2">医生利用休息时间为您解答，如未及时回复请见谅。医生的回复仅为建议，具体的诊疗请前往医院进行。</string>
+    <string name="item_doctor_waiting_tips">温馨提示：您的回答已经通知到用户，等待TA确认问题是否已解决，感谢您的回答！</string>
+    <string name="item_doctor_reply_tips">温馨提示：医生建议仅供参考，详细诊断请前往医院问诊！</string>
+
+    <string name="download">下载</string>
+    <string name="notloginyet">未登陆</string>
+
+    <string name="str_tongB_pay">铜币</string>
+    <string name="consulting_age_set">年龄：</string>
+    <string name="consulting_update_image">上传图片</string>
+    <string name="consulting_pay_money">悬赏</string>
+    <string name="consulting_ask">我要提问</string>
+    <string name="consulting_quick_ask">快速提问</string>
+    <string name="consulting_ask_history">我的咨询历史</string>
+    <string name="consulting_asked_hint">请您尽可能详细的描述您的症状、疾病和身体状况，以便得到医生更准确的解答。</string>
+    <string name="content_less">问题描述内容过短</string>
+    <string name="age_less">请输入年龄！</string>
+    <string name="consulting_problem">疑难杂症</string>
+    <string name="consulting_answer">我的解答</string>
+
+    <string name="living_channels">正在直播</string>
+    <string name="live_guide">节目预告</string>
+    <string name="ask_answer">一问医答</string>
+
+
+    <string name="consulting_not_send_succeed">咨询发送成功</string>
+    <string name="consulting_not_send_faild">咨询发送失败</string>
+
+    <string name="str_set_profile_tip">你还没设置个人资料,赶快去设置吧!</string>
+    <string name="btn_got_setting">马上设置</string>
+    <string name="btn_question">我还有疑问</string>
+    <string name="btn_close">关闭</string>
+    <string name="str_thanks_tip">很遗憾您的解答没有解决TA的问题\n再接再厉，非常感谢您的解答！</string>
+    <string name="btn_subbmit">提交</string>
+    <string name="str_select_department">恭喜！你已成功解答一位患者的疑问，为\n更准确的定位患者的问题，需要麻烦您给\n出您的结论。该患者的问题属于：</string>
+    <string name="picture">[图片]</string>
+    <string name="emotion">[表情]</string>
+
+    <string name="belong_hospital">所属医院</string>
+    <string name="belong_office">所属科室</string>
+    <string name="doctor_title">职        称</string>
+    <string name="doctor_detail">个人介绍</string>
+
+    <string name="str_pay_alipay">支付宝支付</string>
+    <string name="str_pay_bank">银行卡支付</string>
+    <string name="str_get_my_info_fail">获取个人信息失败,请重试</string>
+
+    <string name="waiting_doctor_reply">匹配医生中，请耐心等待！</string>
+
+    <string name="consult_status_auto_closed_tips">问题已自动关闭</string>
+    <string name="consult_status_accepted_tips">问题已解决</string>
+
+    <!--登录信息-->
+    <string name="not_doctor">身份验证失败：该帐号不是医生帐号</string>
+    <string name="not_patient">身份验证失败：该帐号不是患者帐号</string>
+    <string name="str_check_user_fail">您使用的是医生账号，请使用非医生账号登录!</string>
+
+    <string name="notice">网医通知</string>
+    <string name="patient_accept_tips">用户采纳了您的回复，感谢您的解答！</string>
+    <string name="from_patient_tips">您的患者有新回复，赶快去看下吧！</string>
+    <string name="auto_closed_tips">因您长时间没有回复医生，故您的问题已经自动关闭！</string>
+    <string name="no_answer_8_hour_tips">您的问题已经有医生回复了，赶快去看下吧！</string>
+    <string name="no_answer_16_hour_tips">您的问题有了新回复，若长时间无回复您的问题将被关闭！</string>
+    <string name="from_other_tips">说：</string>
+
+
+    <string name="complainTips">请输入您要反馈的问题</string>
+    <string name="complainHint">请尽可能详细的描述您的问题，以便我们能够第一时间解决！</string>
+    <string name="lessThanFive">反馈内容过少，请详细描述您遇到的问题！</string>
+
+    <string name="str_not_permission">网络断开,不能进行该操作</string>
+    <string name="update_my_information_failed">更新个人信息失败</string>
+
+    <string name="consult_image_load_failed_tips">图片加载失败</string>
+    <string name="consult_image_network_exception_tips">网络异常，请检查您的网络情况！</string>
+
+    <string name="str_medical_video">医疗视频</string>
+    <string name="str_fuck_xiaomi">您是小米手机，是否去打开浮动窗口</string>
+    <string name="str_onKick">相同账号在其他地方登陆，请确认账号安全</string>
+</resources>

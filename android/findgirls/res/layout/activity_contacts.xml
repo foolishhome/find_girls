@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.yy.a.widget.PagerSlidingTabStrip
+            android:id="@+id/contacts_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:pstsShouldExpand="true"
+            app:pstsIndicatorColor="@color/orange"
+            app:pstsTabBackground="@drawable/selectable_item"
+            android:background="@color/white"
+            app:pstsTabPaddingLeftRight="14dip"
+            app:pstsUnderlineHeight="1dp"
+            app:pstsIndicatorHeight="4dp"
+            app:pstsDividerColor="@color/tranparent"
+            app:pstsUnderlineColor="@color/actionbar_title"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/live_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

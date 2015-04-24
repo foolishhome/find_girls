@@ -1,0 +1,116 @@
+<resources>
+    <color name="selector_message_pressed">#FFBAD8F6</color>
+    <color name="selector_message_selected">#FFECEFF2</color>
+    <color name="deftitlebg_color">#F7F7F7</color>
+    <color name="titlebg_color">#1DE2B0</color>
+
+    <color name="black">#FF000000</color>
+    <color name="light_black">#292421</color>
+    <color name="msg_bg_color">#F0F0F0</color>
+    <color name="orange">#e47139</color>
+    <color name="orange_highlight">#DF8557</color>
+    <color name="orange_text">#E49578</color>
+    <color name="ccc">#cccccc</color>
+    <color name="list_select_indicator">#f2f2f2</color>
+    <color name="tab_normal_text">#666666</color>
+    <color name="tranparent">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ab_bg_black">#99000000</color>
+    <color name="ab_bg_black_pressed">#44000000</color>
+    <color name="action_bar_black">#2B2E33</color>
+    <color name="action_bar_item_press">#222222</color>
+    <color name="bg_tab_bottom_press">#d8d8d8</color>
+
+    <color name="sub_channel_name_normal">#6B6B6B</color>
+    <color name="sub_channel_name_current">#2C9A0E</color>
+    <color name="subchannel_detail">#B1C0D0</color>
+    <color name="list_bg">#f0f0f0</color>
+    <color name="floral_white">#FFFAF0</color>
+    <color name="list_header_grey">#f7f7f7</color>
+    <color name="window_bg_grey">#f0f0f0</color>
+    <color name="line_grey">#C8C8C8</color>
+    <color name="text_grey">#999999</color>
+    <color name="live_title_text">#6c6c6c</color>
+    <color name="gray">#FF959595</color>
+    <color name="dim_grey">#696969</color>
+    <color name="text_gray">#666666</color>
+    <color name="channel_text_title">#d6d5d5</color>
+    <color name="chat_background">#fcfafb</color>
+    <color name="red">#FFFF0000</color>
+    <color name="sel_red">#FFFB3333</color>
+    <color name="search_contact_gray">#FFF4F4F4</color>
+    <color name="light_orange">#F8AB85</color>
+    <color name="channel_text">#848484</color>
+    <color name="listview_bg">#FFF4F4F4</color>
+    <color name="bg_pager_tab_normal">#f8f8f8</color>
+    <color name="line_color">#FFD9D9D9</color>
+    <color name="medical_dialog_line_color">#B2B2B2</color>
+    <color name="green">#FF6FBC0C</color>
+    <color name="top_channel_name">#343434</color>
+    <color name="sub_channel_reception">#ff0000</color>
+    <color name="ids_color_friend_name">#FF151837</color>
+    <color name="hyper_link_blue">#0066ff</color>
+    <color name="splash_bg">#FFFFFF</color>
+    <color name="bg_channel_role_button">#F0F0F0</color>
+    <color name="channel_actionbar_bg">#88000000</color>
+    <color name="actionbar_title">#000000</color>
+    <color name="actionbar_color">#2C2E34</color>
+    <color name="actionbar_subtitle">#B2B2B2</color>
+
+    <color name="gift_background">#EFEFEF</color>
+    <color name="gift_panel_control_bg">#EFEFEF</color>
+    <color name="gift_name">#ff6600</color>
+    <color name="gift_item_selected_border">#00dda7</color>
+    <color name="gift_item_selected_bg">#ffe2e2e2</color>
+    <color name="text_shadow_gray">#222222</color>
+    <color name="color_channel_on">#CB4902</color>
+    <color name="gift_grade0">#ff0000</color>
+    <color name="gift_grade1">#2fb42b</color>
+    <color name="gift_grade2">#21a21e</color>
+    <color name="gift_grade3">#2fa5f7</color>
+    <color name="gift_grade4">#0f88dd</color>
+    <color name="gift_grade5">#e700ad</color>
+    <color name="gift_grade6">#e700ad</color>
+
+    <color name="confirm_dialog_title_text">#038DBC</color>
+    <color name="color_light_gray">#cccccc</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="pay_item_press">#e78555</color>
+    <color name="pay_my_normal">#e3e3e3</color>
+    <color name="pay_item_normal">#aaaaaa</color>
+    <color name="pay_button_quick">#f57338</color>
+    <color name="pay_text_nomal">#333333</color>
+    <color name="pay_text_title">#999999</color>
+    <color name="tab_select_text">#00dda7</color>
+    <color name="tab_buttom_line">#d9d9d9</color>
+    <color name="live_list_blackgroud">#FFFFFF</color>
+    <color name="actionbar_title_line_buttom">#000000</color>
+    <color name="channel_msg_backgroud">#fcfbfb</color>
+    <color name="splash_backgroud">#F5F5F5</color>
+    <color name="list_subscribe_no">#CACACA</color>
+
+    <color name="dialog_title_bg">#545454</color>
+
+
+    <color name="TextColorWhite">#FFFFFFFF</color>
+
+    <color name="question_close_bkg">#E6EFED</color>
+    <color name="dialog_msg_text">#676767</color>
+    <color name="dialog_msg_bg">#E5FFFFFF</color>
+    <color name="dialog_text_color">#323232</color>
+
+    <!--action bar-->
+    <color name="actionbar_line">#C3C3C3</color>
+    <color name="actionbar_bg_color">#FAFAFA</color>
+
+    <!--doctor profile-->
+    <color name="profile_text_color">#ff646464</color>
+
+    <!--咨询提问里的文字颜色-->
+    <color name="consult_word_color">#646464</color>
+    <!--咨询提问里的赏金数值颜色-->
+    <color name="consult_reward_color">#00dda7</color>
+
+
+</resources>

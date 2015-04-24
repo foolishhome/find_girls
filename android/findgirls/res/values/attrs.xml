@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmoticonSelectFragment">
+        <attr name="numColumns"
+              format="integer"/>
+        <attr name="countPerPage"
+              format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ChatInputFragment">
+        <attr name="layout"
+              format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleTextProgressView">
+        <attr name="progressingText" format="reference|string"/>
+        <attr name="successText" format="reference|string"/>
+        <attr name="timeoutText" format="reference|string"/>
+        <attr name="timeout" format="reference|integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PraiseView">
+        <attr name="enabled" format="reference|boolean"/>
+        <attr name="margin" format="reference|float"/>
+    </declare-styleable>
+</resources>

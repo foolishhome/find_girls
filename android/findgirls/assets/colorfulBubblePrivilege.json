@@ -1,0 +1,73 @@
+{
+    "privileges": [
+        {
+            "id": 0,
+            "days": 0,
+            "vip": 0,
+            "available": true,
+            "userInfo": "{\"id\": \"0\",\"version\": 1,\"name\": \"default\",\"type\": 0,\"leftTextColor\": \"#000000\",\"rightTextColor\": \"#000000\"}"
+        },
+        {
+            "id": 1000,
+            "days": 0,
+            "vip": 0,
+            "available": false,
+            "userInfo": "{\"id\": \"1000\",\"version\": 1,\"name\": \"天空\",\"type\": 1,\"leftTextColor\": \"#5082AA\",\"rightTextColor\": \"#5082AA\"}"
+        },
+        {
+            "id": 1001,
+            "days": 0,
+            "vip": 0,
+            "available": false,
+            "userInfo": "{\"id\": \"1001\",\"version\": 1,\"name\": \"鲸鱼\",\"type\": 1,\"leftTextColor\": \"#146450\",\"rightTextColor\": \"#146450\"}"
+        },
+        {
+            "id": 5000,
+            "days": 3,
+            "vip": 0,
+            "available": false,
+            "userInfo": "{\"id\": \"5000\",\"version\": 1,\"name\": \"神兽\",\"type\": 2,\"leftTextColor\": \"#321400\",\"rightTextColor\": \"#321400\"}"
+        },
+        {
+            "id": 5001,
+            "days": 7,
+            "vip": 0,
+            "available": false,
+            "userInfo": "{\"id\": \"5001\",\"version\": 1,\"name\": \"蛋碎了\",\"type\": 2,\"leftTextColor\": \"#321400\",\"rightTextColor\": \"#321400\"}"
+        },
+        {
+            "id": 5002,
+            "days": 15,
+            "available": false,
+            "userInfo": "{\"id\": \"5002\",\"version\": 1,\"name\": \"土豪金\",\"type\": 2,\"leftTextColor\": \"#413200\",\"rightTextColor\": \"#413200\"}"
+        },
+        {
+            "id": 10000,
+            "days": 0,
+            "vip": 1,
+            "available": false,
+            "userInfo": "{\"id\": \"10000\",\"version\": 1,\"name\": \"小黄鸡\",\"type\": 3,\"leftTextColor\": \"#969400\",\"rightTextColor\": \"#969400\"}"
+        },
+        {
+            "id": 10001,
+            "days": 0,
+            "vip": 1,
+            "available": false,
+            "userInfo": "{\"id\": \"10001\",\"version\": 1,\"name\": \"方便面君\",\"type\": 3,\"leftTextColor\": \"#964628\",\"rightTextColor\": \"#964628\"}"
+        },
+        {
+            "id": 10002,
+            "days": 0,
+            "vip": 1,
+            "available": false,
+            "userInfo": "{\"id\": \"10002\",\"version\": 1,\"name\": \"黑猫\",\"type\": 3,\"leftTextColor\": \"#FAFAAA\",\"rightTextColor\": \"#FAFAAA\"}"
+        },
+        {
+            "id": 10003,
+            "days": 0,
+            "vip": 1,
+            "available": false,
+            "userInfo": "{\"id\": \"10003\",\"version\": 1,\"name\": \"小小贱\",\"type\": 3,\"leftTextColor\": \"#323232\",\"rightTextColor\": \"#323232\"}"
+        }
+    ]
+}

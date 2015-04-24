@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/listview_bg"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffffff">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:maxLength="20"
+            android:background="#ffffffff"
+            android:layout_weight="0.06"
+            android:layout_toLeftOf="@+id/btn_del_nickname"
+            android:layout_alignParentStart="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_del_nickname"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/close"
+            android:background="#ffffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_max_length"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+
+</LinearLayout>

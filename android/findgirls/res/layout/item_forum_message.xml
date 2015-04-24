@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/im_message_padding"
+                android:paddingRight="@dimen/im_message_padding"
+                android:paddingBottom="14dp"
+        >
+
+    <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:background="@drawable/bg_conversation_time"/>
+
+    <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_below="@id/tv_time"
+            android:layout_width="@dimen/im_message_avatar_size"
+            android:layout_height="@dimen/im_message_avatar_size"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/dummy_content_desc"/>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:layout_below="@id/tv_time"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_avatar"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="-3dp"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/text_grey"
+            android:visibility="gone"
+            />
+
+    <com.yy.a.widget.richtext.ConversationTextView
+            android:id="@+id/tv_text"
+            android:layout_below="@id/tv_name"
+            android:layout_toLeftOf="@id/iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="@dimen/im_text_size"
+            android:background="@drawable/bg_message_item_right"
+            />
+
+</RelativeLayout>

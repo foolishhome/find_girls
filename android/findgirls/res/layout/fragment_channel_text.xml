@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <ListView
+            android:id="@+id/lv_text"
+            android:layout_above="@+id/view_splitter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@color/tranparent"
+            android:fadingEdge="none"
+            android:minHeight="20dip"
+            android:transcriptMode="normal"
+            android:background="@color/chat_background"
+            />
+
+    <View
+            android:id="@+id/view_splitter"
+            android:layout_above="@+id/fl_channel_input"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/line_grey"/>
+
+    <View
+            android:id="@id/view_dismiss_input"
+            android:layout_above="@id/fl_channel_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    <FrameLayout
+            android:id="@+id/fl_channel_input"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+</RelativeLayout>
+

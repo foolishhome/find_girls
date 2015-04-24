@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:background="@drawable/selectable_item_white_bg"
+        android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/view_splitter" android:layout_width="match_parent" android:layout_height="1dp"
+          android:layout_alignParentTop="true"
+          android:background="@color/window_bg_grey"/>
+    <TextView
+            android:id="@+id/tv_name"
+            android:layout_below="@+id/view_splitter"
+            android:layout_alignLeft="@+id/view_splitter"
+            android:layout_width="wrap_content"
+            android:textColor="@color/orange"
+            android:paddingTop="8dp"
+            android:paddingLeft="12dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/view_more"
+            android:layout_below="@+id/view_splitter"
+            android:layout_alignParentRight="true"
+            android:paddingTop="8dp"
+            android:paddingRight="12dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/more"
+            android:layout_width="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+android:id="@+id/LinearLayout01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.yy.a.widget.floatinglistview.FloatingGroupExpandableListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lv_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/line_grey"
+        android:groupIndicator="@null"
+        android:dividerHeight="1px"
+        android:divider="@color/line_grey"
+        android:overScrollMode="always"
+        android:background="@color/white"
+        />
+</LinearLayout>
+
+

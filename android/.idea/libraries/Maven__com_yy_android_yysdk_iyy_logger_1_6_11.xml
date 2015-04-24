@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yy.android.yysdk:iyy_logger:1.6.11">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yy/android/yysdk/iyy_logger/1.6.11/iyy_logger-1.6.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yy/android/yysdk/iyy_logger/1.6.11/iyy_logger-1.6.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yy/android/yysdk/iyy_logger/1.6.11/iyy_logger-1.6.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

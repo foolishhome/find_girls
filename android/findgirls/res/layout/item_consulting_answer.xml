@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mainLinearLayout"
+    android:isScrollContainer="false"
+    android:paddingLeft="12dp"
+    android:paddingTop="6dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="6dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingLeft="16dp"
+        android:paddingTop="13dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="13dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.yy.a.widget.richtext.ConversationTextView
+                android:id="@+id/askerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/portrait"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font_size"
+                android:text="我：1234654567897641" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hasPhotoIcon"
+                android:layout_alignTop="@+id/askerText"
+                android:layout_toRightOf="@+id/askerText"
+                android:layout_toEndOf="@+id/askerText"
+                android:src="@drawable/icon_patient_ask_default"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="2dp" />
+
+        </RelativeLayout>
+
+        <com.yy.a.widget.richtext.ConversationTextView
+            android:id="@+id/doctorText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_marginTop="@dimen/msg_title_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/med_font_size"
+            android:text="答：023156423184623135" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2min ago"
+                android:textColor="@color/consult_word_color"
+                android:id="@+id/timeText"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有新回复"
+                android:layout_marginRight="5dp"
+                android:id="@+id/hasNewText"
+                android:background="#ffffffff"
+                android:textColor="#ff55ffc8"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

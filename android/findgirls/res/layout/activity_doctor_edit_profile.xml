@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/selectable_item_white_bg"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_buttom_line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="@color/black"
+            android:text="@string/portrait"
+            android:fontFamily="Microsoft Yahei"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp" />
+
+        <ImageView
+            android:id="@+id/iv_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/def_portrait_online"
+            android:layout_toLeftOf="@+id/doctorPortrait"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/doctorPortrait"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="false" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selectable_item_white_bg"
+        android:id="@+id/rl_nickname_container"
+        android:layout_marginTop="24dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="@color/black"
+            android:text="名        字"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:fontFamily="Microsoft Yahei"
+            android:id="@+id/tv_lable_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med_font_size"
+            android:text="Medium Text"
+            android:fontFamily="Microsoft Yahei"
+            android:id="@+id/tv_nickname"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView222"
+            android:textColor="#ff646464"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_lable_name"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView222"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_hospital_container"
+        android:layout_width="match_parent"
+        android:background="@drawable/selectable_item_white_bg"
+        android:layout_height="44dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="@color/black"
+            android:text="@string/belong_hospital"
+            android:id="@+id/tv_lable_hospital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med_font_size"
+            android:text="Medium Text"
+            android:id="@+id/doctorHospital"
+            android:fontFamily="Microsoft Yahei"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView33"
+            android:textColor="#ff646464"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/tv_lable_hospital"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView35"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_belongoffice_container"
+        android:layout_width="match_parent"
+        android:background="@drawable/selectable_item_white_bg"
+        android:layout_height="44dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="@color/black"
+            android:text="@string/belong_office"
+            android:id="@+id/tv_lable_office" />
+
+        <com.yy.medical.activity.doctorProfile.DepartmentSpinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_office_list"
+            android:background="#FFFFFFFF"
+            android:textSize="@dimen/med_font_size"
+            android:fontFamily="Microsoft Yahei"
+            android:textAlignment="center"
+            android:textColor="#ff646464"
+            android:spinnerMode="dialog"
+            android:layout_toRightOf="@+id/tv_lable_office"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="#ff646464"
+            android:text="@string/belong_office"
+            android:id="@+id/tmpDepartmentTxt"
+            android:layout_alignTop="@+id/tv_lable_office"
+            android:layout_alignLeft="@+id/spinner_office_list"
+            android:layout_alignStart="@+id/spinner_office_list"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+    <RelativeLayout
+        android:id="@+id/rl_doctor_title_container"
+        android:layout_width="match_parent"
+        android:background="@drawable/selectable_item_white_bg"
+        android:layout_height="44dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="10dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal|start"
+            android:background="#FFFFFFFF"
+            android:id="@+id/spinner_doctor_title_list"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="#ff646464"
+            android:textAlignment="center"
+            android:spinnerMode="dialog"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_lable_doctor_title"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="@color/black"
+            android:text="职        称"
+            android:fontFamily="Microsoft Yahei"
+            android:id="@+id/tv_lable_doctor_title" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_doctor_detail_container"
+        android:layout_width="match_parent"
+        android:background="@drawable/selectable_item_white_bg"
+        android:layout_height="44dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/med_font_size"
+            android:textColor="@color/black"
+            android:text="@string/doctor_detail"
+            android:fontFamily="Microsoft Yahei"
+            android:id="@+id/tv_lable_doctor_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med_font_size"
+            android:text="Medium Text"
+            android:fontFamily="Microsoft Yahei"
+            android:id="@+id/tv_doctor_introduce"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView33"
+            android:textColor="#ff646464"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/tv_lable_doctor_detail"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView37"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_marginTop="20dp"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:text = "@string/complete"
+        android:fontFamily="Microsoft Yahei"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="56dp" />
+
+
+</LinearLayout>

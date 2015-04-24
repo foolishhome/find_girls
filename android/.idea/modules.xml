@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogs/android-styled-dialogs.iml" filepath="$PROJECT_DIR$/dialogs/android-styled-dialogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-model/app-model.iml" filepath="$PROJECT_DIR$/app-model/app-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/findgirls/findgirls.iml" filepath="$PROJECT_DIR$/findgirls/findgirls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/findgirls-parent.iml" filepath="$PROJECT_DIR$/findgirls-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yymedical-parent.iml" filepath="$PROJECT_DIR$/yymedical-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/findgirls/gen-external-apklibs/~apklib-com.actionbarsherlock_actionbarsherlock_2.0.6-SNAPSHOT.iml" filepath="$PROJECT_DIR$/findgirls/gen-external-apklibs/~apklib-com.actionbarsherlock_actionbarsherlock_2.0.6-SNAPSHOT.iml" />
+    </modules>
+  </component>
+</project>
+

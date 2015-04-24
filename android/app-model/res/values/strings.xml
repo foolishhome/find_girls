@@ -1,0 +1,111 @@
+<resources>
+
+    <string name="str_welcome_to_channel">欢迎来到%d频道</string>
+    <string name="channel_text_deny_all">管理员禁止所有人打字</string>
+    <string name="channel_text_deny_guest">管理员禁止游客打字</string>
+    <string name="channel_text_deny_me">你已经被管理员禁止了文字聊天！</string>
+    <string name="channel_text_length_exceeded" formatted="false">管理员设置了游客在本频道每次最大可发送%d个字符，请修改后再发。</string>
+    <string name="channel_text_too_fast" formatted="false">对不起，频道目前限制文字聊天的速度！请%d秒后再发言。</string>
+    <string name="channel_text_waiting" formatted="false">管理员规定游客必须进入频道%d分钟后，才能发言！请%d分钟%d秒后再发言。</string>
+    <string name="channel_text_notinchannel" formatted="false">你已经不在频道里面，请退出重进频道</string>
+    <string name="channel_text_channelerr" formatted="false">频道错误，请退出重进频道</string>
+
+    <string name="err_empty_password">密码不能为空</string>
+    <string name="err_empty_username">用户名不能为空</string>
+    <string name="str_your_pass_contain_invalid_char">你输入的密码中包含中文字符，请在输入法中选择英文字符输入</string>
+    <string name="str_join_net">网络错误</string>
+    <string name="err_wrong_password">密码错误</string>
+    <string name="err_nonexist_user">用户名不存在</string>
+    <string name="err_no_server">服务器连接失败，请稍后重试</string>
+    <string name="err_user_ban">您因涉嫌违规操作，帐号已被官方暂时冻结，请过一段时间后再尝试登录，或进入官方客服频道10咨询详情。</string>
+    <string name="err_retry_verify">密码错误次数过多，建议您使用手机号进行密码找回。继续频繁尝试可能造成帐号被暂时冻结。</string>
+    <string name="login_freez">您短时间内重试密码次数过多，为保障安全，您的帐号已被暂时冻结，请1小时后再试</string>
+    <string name="err_freeze_kick">您所在频道因涉及违规内容已被官方冻结，您的帐号同时被暂时冻结。您可以进入官方客服频道10咨询详情。</string>
+    <string name="err_user_kick">您的账号已在其他设备登录，建议尽快修改密码！</string>
+    <string name="str_pic_code_failed">图片验证码验证失败，请登录重试！</string>
+    <string name="str_timeout">登录操作超时</string>
+    <string name="str_identify_code">请输入验证码</string>
+    <string name="err_invalid_req">非法的请求</string>
+    <string name="err_search_self">这是您自己的YY号</string>
+    <string name="err_too_often_search">请求过于频繁，请稍后再试。</string>
+    <string name="err_nonexist_yy">查询不到Y友信息</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="str_send_gift_text_format" formatted="false">%s 送{%d}%d</string>
+    <string name="str_first_mic_singer">首麦主播</string>
+    <string name="data_parse_error">数据解析错误</string>
+    <string name="str_abroad">国外</string>
+
+    <string name="ptr_refreshing">加载中…</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">松开立即刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">刷新中…</string>
+    <string name="ptr_retry_load">点击重新加载</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载更多…</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开即加载…</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">加载中,请稍候…</string>
+
+    <string name="str_im_arrived">已送达</string>
+    <string name="str_im_read">已阅读</string>
+    <string name="str_im_sending">待发送</string>
+    <string name="str_im_sent">已发送</string>
+    <string name="str_im_uploading">上传中</string>
+    <string name="str_image_msg">图片消息</string>
+    <string name="str_send_fail">发送失败</string>
+    <string name="str_voice_msg">语音消息</string>
+
+    <string name="str_yesterday">昨天</string>
+    <string name="str_today">今天</string>
+    <string name="str_day_before_yesterday">前天</string>
+    <string name="str_time_format" formatted="false">%02d:%02d</string>
+    <string name="str_short_date_format" formatted="false">%d月%d日</string>
+    <string name="str_date_format" formatted="false">%d年%d月%d日</string>
+
+    <string name="str_forum_notification">群通知</string>
+    <string name="str_forum_request_join">请求加入群</string>
+    <string name="str_forum_kick_you_out" formatted="false">你已被请出群 %s</string>
+    <string name="str_forum_disbanded" formatted="false">群“%s”已经被解散</string>
+    <string name="str_new_forum" formatted="false">你已加入群 %s</string>
+    <string name="str_forum_reject_add" formatted="false">群“%s”拒绝了你的加入申请</string>
+    <string name="social_boardcast">社区广播</string>
+    <string name="welcome">welcome to here</string>
+    <string name="str_buddy_added">已经成为你的好友</string>
+    <string name="str_buddy_reject">拒绝加你为好友</string>
+    <string name="str_other_invite">%s请求加你为好友</string>
+    <string name="str_other_invite_no_name">添加好友请求</string>
+    <string name="str_hello">:你好</string>
+    <string name="str_forum_format" formatted="false">%d条未读的群通知</string>
+    <string name="str_invite_format" formatted="false">%d条未处理的加好友请求</string>
+    <string name="str_msg_notice">消息通知</string>
+    <string name="platform_windows">PC</string>
+    <string name="platform_android">Android</string>
+    <string name="platform_iphone">iPhone</string>
+    <string name="platform_symbian">Symbian</string>
+    <string name="platform_winphone">Windows Phone</string>
+    <string name="network_wifi">WiFi</string>
+    <string name="network_2g">2G</string>
+    <string name="network_3g">3G</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="str_wo">我</string>
+
+    <string name="str_unread_format">收到%d条消息未读</string>
+    <string name="single_msg">%1$s(%2$d条新消息)</string>
+    <string name="multiple_message">%1$d个联系人发来%2$d条新消息</string>
+    <string name="str_receive_one_msg">你由一条新消息</string>
+    <string name="str_yy_forum_notify">%s群</string>
+    <string name="is_login_running">正在登录中</string>
+    <string name="thx_for_suggestion">感谢你的建议</string>
+    <string name="submit_suggestion_error">提交建议失败</string>
+    <string name="im_messsage">%1$s:%2$s</string>
+    <string name="forum_message">%1$s:%2$s</string>
+    <string name="jiemu_live_notify">您预订的节目\"%s\"开播啦</string>
+    <string name="zhubo_live_notify">您订阅的医生\"%s\"开播啦</string>
+    <string name="zhubo_live_notify_no_name">你关注的主播开播啦</string>
+    <string name="str_live_notify">直播通知</string>
+    <string name="quit_forum_fail">群主无法退群,请使用PC客户端解散群</string>
+
+    <string name="stop_record">录制完成</string>
+    <string name="str_gift_price_format" formatted="false">%.1f%s</string>
+    <string name="waiting_doctor">您排在第%d位，等待医生连线中...</string>
+    <string name="doctor_accept">已成功连线，请提问...</string>
+</resources>

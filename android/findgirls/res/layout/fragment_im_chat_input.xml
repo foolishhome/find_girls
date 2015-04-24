@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/chat_panel_height"
+            android:background="@drawable/bg_im_input"
+            android:padding="10dp"
+            android:focusableInTouchMode="true">
+
+        <Button
+                android:id="@+id/btn_more"
+                android:layout_width="@dimen/chat_panel_icon_size"
+                android:layout_height="@dimen/chat_panel_icon_size"
+                android:layout_alignBottom="@+id/editPanel"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/ic_more_over"/>
+
+        <Button
+                android:id="@+id/btn_emoticon"
+                android:layout_toRightOf="@id/btn_more"
+                android:layout_width="@dimen/chat_panel_icon_size"
+                android:layout_height="@dimen/chat_panel_icon_size"
+                android:layout_alignBottom="@+id/editPanel"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_emoticon"/>
+
+        <ViewAnimator
+                android:id="@+id/va_button"
+                android:layout_width="@dimen/chat_panel_send_button_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/editPanel"
+                android:layout_marginLeft="10dp"
+                >
+
+            <Button
+                    android:id="@+id/btn_speak"
+                    android:layout_width="@dimen/chat_panel_icon_size"
+                    android:layout_height="@dimen/chat_panel_icon_size"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/ic_speak"
+                    />
+
+            <Button
+                    android:id="@+id/btn_keyboard"
+                    android:layout_width="@dimen/chat_panel_icon_size"
+                    android:layout_height="@dimen/chat_panel_icon_size"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/ic_keyboard"
+                    />
+
+            <Button
+                    style="@style/ChatPanelSendButton"
+                    android:id="@+id/btn_send"
+                    android:layout_gravity="center_horizontal|bottom"
+                    />
+
+
+        </ViewAnimator>
+
+        <LinearLayout
+            android:id="@+id/editPanel"
+            android:layout_toRightOf="@id/btn_emoticon"
+            android:layout_toLeftOf="@id/va_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <ViewAnimator
+                android:id="@+id/va_text_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/chat_panel_input_height"
+                    android:maxLines="4"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="2sp"
+                    android:paddingBottom="2sp"
+                    android:paddingTop="2sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/black"
+                    android:paddingRight="5sp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_input_edit"
+                    android:inputType="textMultiLine"/>
+                <TextView
+                    android:id="@+id/tv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chat_panel_input_height"
+                    android:background="@drawable/bg_record_normal"
+                    android:text="@string/press_to_record_voice"
+                    android:textColor="@color/orange_text"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    />
+
+            </ViewAnimator>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/fl_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_im_input_extra_panel"
+            />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/search_contact_gray">
+
+    <TextView
+            android:id="@+id/tv_add_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="17dp"
+            android:textSize="12sp"
+            android:text="@string/search_buddy"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/window_bg_grey"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/et_buddy_input"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="@string/input_buddy_uid"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:paddingLeft="16dp"
+                android:textSize="16sp"
+                android:background="@color/white"/>
+
+        <ImageView android:layout_width="30dp"
+                   android:visibility="visible"
+                   android:layout_height="44dp"
+                   android:src="@drawable/remove_normal"
+                   android:id="@+id/iv_remove_buddy"
+                   android:scaleType="center"
+                   android:layout_marginRight="15dp"
+                   android:layout_toLeftOf="@+id/iv_buddy_search"/>
+
+        <ImageView
+                android:id="@+id/iv_buddy_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_search"
+                android:layout_marginRight="16dp"
+                android:clickable="true"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/window_bg_grey"/>
+
+    <TextView
+            android:id="@+id/tv_add_forum"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="17dp"
+            android:textSize="12sp"
+            android:text="@string/search_forum"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/window_bg_grey"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/et_forum_input"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="@string/input_forum_uid"
+                android:inputType="number"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:paddingLeft="16dp"
+                android:textSize="16sp"
+                android:background="@color/white"/>
+
+        <ImageView android:layout_width="30dp"
+                   android:visibility="visible"
+                   android:layout_height="44dp"
+                   android:src="@drawable/remove_normal"
+                   android:id="@+id/iv_remove_forum"
+                   android:scaleType="center"
+                   android:layout_marginRight="15dp"
+                   android:layout_toLeftOf="@+id/iv_forum_search"/>
+
+        <ImageView
+                android:id="@+id/iv_forum_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_search"
+                android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/window_bg_grey"/>
+
+</LinearLayout>

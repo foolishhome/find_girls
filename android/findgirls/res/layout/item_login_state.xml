@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+
+    <TextView
+            android:id="@+id/tv_login_state"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/text_gray"
+            android:text="@string/login_state_changed"
+            android:layout_marginLeft="@dimen/title_margin_left"
+            android:textSize="@dimen/tiny_font_size"
+            android:layout_marginBottom="5dp"
+            />
+    <View
+            android:id="@+id/top_line1"
+            android:layout_height="@dimen/setting_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/line_color"
+            />
+
+    <RelativeLayout
+            android:id="@+id/rl_online"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_setting_item"
+            android:clickable="true"
+            android:layout_height="@dimen/setting_item_height"
+            >
+        <TextView
+                android:id="@+id/tv_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/login_state_online"
+                android:layout_marginLeft="@dimen/title_margin_left"
+                android:textSize="@dimen/med_font_size"
+                />
+
+        <ImageView
+                android:id="@+id/iv_online_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/check_sel"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/small_margin_right"
+                android:visibility="gone"
+                />
+    </RelativeLayout>
+
+    <View
+            android:id="@+id/top_line2"
+            android:layout_height="@dimen/setting_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/line_color"
+            />
+
+
+    <RelativeLayout
+            android:id="@+id/rl_hide"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_setting_item"
+            android:clickable="true"
+            android:layout_height="@dimen/setting_item_height"
+            >
+        <TextView
+                android:id="@+id/tv_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/login_state_hide"
+                android:layout_marginLeft="@dimen/title_margin_left"
+                android:textSize="@dimen/med_font_size"
+                />
+
+        <ImageView
+                android:id="@+id/iv_hide_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/check_sel"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/small_margin_right"
+                android:visibility="gone"
+                />
+    </RelativeLayout>
+
+    <View
+            android:id="@+id/top_line2"
+            android:layout_height="@dimen/setting_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/line_color"
+            />
+
+</LinearLayout>

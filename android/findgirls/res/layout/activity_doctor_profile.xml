@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doctorInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/doctor_basic_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/doctorPortrait"
+            android:src="@drawable/def_portrait_online" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="医生名字"
+                android:textSize="@dimen/med_font_size"
+                android:fontFamily="Microsoft Yahei"
+                />
+
+            <TextView
+                android:id="@+id/doctorJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医生职称"
+                android:textColor="@color/tab_normal_text"
+                android:fontFamily="Microsoft Yahei"
+                android:textSize="@dimen/tiny_font_size"/>
+
+            <TextView
+                android:id="@+id/doctorHospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_normal_text"
+                android:text="所属医院"
+                android:fontFamily="Microsoft Yahei"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/certificate"
+                android:layout_marginTop="5dp" />
+            <com.yy.medical.widget.PraiseView
+                android:id="@+id/doctorPraise"
+                android:layout_width="205dp"
+                android:layout_height="33dp"
+                android:saveEnabled="false"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_doctor_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/doctor_basic_info"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="#707070"
+        android:textSize="@dimen/med_font_size"
+        android:maxLines="8"
+        android:text=" 正在查询详细资料，请稍后......." />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorFollowed"
+        android:text="关注Ta"
+        android:textSize="11sp"
+        android:background="@drawable/selector_follow_button"
+        android:layout_gravity="center_horizontal"
+        style="@style/FollowButton"
+        android:layout_below="@+id/tv_doctor_introduce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>

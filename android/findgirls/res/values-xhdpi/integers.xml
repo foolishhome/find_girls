@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="main_live_image_width">240</integer>
+    <integer name="live_main_page_columns">1</integer>
+    <integer name="image_loader_memory">10241024</integer>
+    <integer name="image_loader_thread_count">4</integer>
+</resources>

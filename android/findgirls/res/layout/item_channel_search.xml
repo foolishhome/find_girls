@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/selectable_item_white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <com.yy.a.widget.HeightMatchWidthImageView
+            android:id="@+id/iv_thumb"
+            android:scaleType="centerCrop"
+            android:layout_width="64dp"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:src="@drawable/logo_grey"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.yy.a.widget.richtext.ConversationTextView
+                android:id="@+id/ctv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="@dimen/msg_title_margin_left"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font_size"
+                android:text="数据加载中....."
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ctv_title"
+                android:layout_marginLeft="@dimen/msg_title_margin_left"
+                android:id="@+id/relativeLayout"
+                android:layout_marginTop="12dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zhuanjia"
+                    android:id="@+id/iv_author" />
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="加载中..."
+                    android:textSize="@dimen/tiny_font_size"
+                    android:textColor="@color/gray"
+                    android:layout_toEndOf="@+id/iv_author"
+                    android:layout_alignBaseline="@+id/iv_author"
+                    android:layout_alignBottom="@+id/iv_author"
+                    android:layout_toRightOf="@+id/iv_author"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_vedio_long"
+                    android:layout_toEndOf="@+id/tv_author"
+                    android:src="@drawable/bfsj"
+                    android:layout_marginLeft="26dp"
+                    android:layout_alignBottom="@+id/iv_author"
+                    android:layout_toRightOf="@+id/tv_author" />
+                <TextView
+                    android:id="@+id/tv_vedeo_long"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="加载中..."
+                    android:textSize="@dimen/tiny_font_size"
+                    android:textColor="@color/gray"
+                    android:layout_alignBaseline="@+id/iv_author"
+                    android:layout_alignBottom="@+id/iv_author"
+                    android:layout_toRightOf="@+id/iv_vedio_long"
+                    android:layout_toEndOf="@+id/iv_vedio_long"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_has_play_time"
+                    android:src="@drawable/icon_play_number"
+                    android:layout_toEndOf="@+id/tv_vedeo_long"
+                    android:layout_marginLeft="26dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tv_vedeo_long"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_has_play_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加载中..."
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/tiny_font_size"
+                    android:textColor="@color/gray"
+                    android:layout_toEndOf="@+id/iv_has_play_time"
+                    android:layout_alignBottom="@+id/iv_has_play_time"
+                    android:layout_toRightOf="@+id/iv_has_play_time"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

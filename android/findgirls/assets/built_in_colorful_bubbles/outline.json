@@ -1,0 +1,89 @@
+{
+    "version": 0,
+    "platform": "Android",
+    "bubbles": [
+        {
+            "id": "0",
+            "version": 1,
+            "name": "default",
+            "type": 0,
+            "leftTextColor": "#000000",
+            "rightTextColor": "#000000"
+        },
+        {
+            "id": "1000",
+            "version": 1,
+            "name": "天空",
+            "type": 1,
+            "leftTextColor": "#5082AA",
+            "rightTextColor": "#5082AA"
+        },
+        {
+            "id": "1001",
+            "version": 1,
+            "name": "鲸鱼",
+            "type": 1,
+            "leftTextColor": "#146450",
+            "rightTextColor": "#146450"
+        },
+        {
+            "id": "5000",
+            "version": 1,
+            "name": "神兽",
+            "type": 2,
+            "daysRequired": 3,
+            "leftTextColor": "#321400",
+            "rightTextColor": "#321400"
+        },
+        {
+            "id": "5001",
+            "version": 1,
+            "name": "蛋碎了",
+            "type": 2,
+            "daysRequired": 7,
+            "leftTextColor": "#321400",
+            "rightTextColor": "#321400"
+        },
+        {
+            "id": "5002",
+            "version": 1,
+            "name": "土豪金",
+            "type": 2,
+            "daysRequired": 15,
+            "leftTextColor": "#413200",
+            "rightTextColor": "#413200"
+        },
+        {
+            "id": "10000",
+            "version": 1,
+            "name": "小黄鸡",
+            "type": 3,
+            "leftTextColor": "#969400",
+            "rightTextColor": "#969400"
+        },
+        {
+            "id": "10001",
+            "version": 1,
+            "name": "方便面君",
+            "type": 3,
+            "leftTextColor": "#964628",
+            "rightTextColor": "#964628"
+        },
+        {
+            "id": "10002",
+            "version": 1,
+            "name": "黑猫",
+            "type": 3,
+            "leftTextColor": "#FAFAAA",
+            "rightTextColor": "#FAFAAA"
+        },
+        {
+            "id": "10003",
+            "version": 1,
+            "name": "小小贱",
+            "type": 3,
+            "leftTextColor": "#323232",
+            "rightTextColor": "#323232"
+        }
+    ]
+}

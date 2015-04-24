@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yy.medical.widget.TouchRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                          xmlns:app="http://schemas.android.com/apk/res/com.yy.medical"
+                                          android:id="@+id/trl_gift_panel"
+    android:layout_gravity="center_vertical"
+                                          android:layout_height="wrap_content"
+                                          android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/view_shadow_gap"/>
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/view_shadow_gap"
+        android:background="@drawable/bg_top_shadow" />
+
+    <android.support.v4.view.ViewPager
+        android:background="@color/gift_background"
+        android:layout_below="@id/view_shadow"
+        android:gravity="center_horizontal"
+        android:id="@+id/vp_gift_views"
+        android:layout_height="@dimen/channel_gift_grid_height"
+        android:overScrollMode="never"
+        android:layout_width="fill_parent" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/ll_indicators"
+        android:layout_alignBottom="@id/vp_gift_views"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gift_control"
+        android:clickable="true"
+        android:layout_below="@id/vp_gift_views"
+        android:layout_height="@dimen/channel_gift_panel_bottom_height"
+        android:layout_width="fill_parent"
+        android:background="@color/gift_panel_control_bg" >
+
+        <TextView
+            android:id="@+id/tv_count_static"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/channel_gift_panel_control_padding"
+            android:text="@string/str_count"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/channel_gift_control_text_size" />
+
+        <FrameLayout
+            android:id="@+id/fl_amount"
+            android:paddingLeft="@dimen/channel_gift_control_spacing"
+            android:paddingRight="@dimen/channel_gift_control_spacing"
+            android:layout_toRightOf="@id/tv_count_static"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btn_amount"
+                android:background="@drawable/bg_gift_amount"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="@dimen/channel_gift_amount_btn_height"
+                android:layout_width="@dimen/channel_gift_amount_btn_width"
+                android:textSize="@dimen/channel_gift_control_text_size" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_send_gift"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/channel_gift_panel_control_padding"
+            android:paddingRight="@dimen/channel_gift_panel_control_padding" >
+
+            <TextView
+                android:background="@drawable/btn_send_gift_selector"
+                android:duplicateParentState="true"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/channel_gift_send_btn_height"
+                android:layout_width="@dimen/channel_gift_send_btn_width"
+                android:gravity="center"
+                android:text="@string/str_send_gift"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/channel_gift_control_text_size" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <com.yy.medical.widget.SimpleTextProgressView android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_centerInParent="true"
+                                                 android:id="@+id/simple_progress"
+                                                 app:progressingText="@string/gift_list_loading"
+                                                 app:successText="@string/gift_list_load_complete"
+                                                 app:timeoutText="@string/gift_list_load_fail"/>
+
+</com.yy.medical.widget.TouchRelativeLayout>

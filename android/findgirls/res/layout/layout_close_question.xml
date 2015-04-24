@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="150dp">
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/doctorPortrait"
+            android:layout_marginTop="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/def_portrait_online"
+            />
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海"
+            android:layout_marginLeft="11sp"
+            android:layout_alignTop="@id/doctorPortrait"
+            android:layout_toRightOf="@+id/doctorPortrait"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主治医生"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/doctorJobTitle"
+            android:layout_alignTop="@+id/doctorHospital"
+            android:layout_toRightOf="@+id/doctorHospital"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="上海瑞金医院"
+            android:id="@+id/doctorHospital"
+            android:layout_below="@+id/doctorName"
+            android:layout_alignLeft="@+id/doctorName" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:text="对医生的解答作出评价"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <com.yy.medical.widget.PraiseView
+        xmlns:attribute="http://schemas.android.com/apk/res/com.yy.medical"
+        android:layout_marginTop="10dp"
+        android:id="@+id/doctorPraise"
+        android:layout_width="150dp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="6dp"
+        android:layout_gravity="center"
+        android:layout_alignLeft="@+id/doctorName"
+        attribute:enabled="false"
+    />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorFollowed"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="关注Ta"
+        android:textSize="11sp"
+        android:background="@drawable/selector_follow_button"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
