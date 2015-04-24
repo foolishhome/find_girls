@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+platform :ios, '7.0'
+
+xcodeproj 'findgirls'
+
+pod 'JSONKit', :podspec => 'http://repo.yypm.com/dwintegrate/specs/jsonkit/1.5pre2/jsonkit.podspec'
+pod 'openssl', :podspec => 'http://repo.yypm.com/dwintegrate/specs/openssl/1.0.1g/1.0.1g.podspec'
+pod 'protobuf', :podspec => 'http://repo.yypm.com/dwintegrate/specs/protobuf/241.3128.0/protobuf.podspec'
+pod 'curl', :podspec => 'http://repo.yypm.com/dwintegrate/specs/curl/7371.1474.0/curl.podspec'
+pod 'AFNetworking', "~> 2.0"
+
+
+post_install do |installer|
+    installer.project.targets.each do |target|
+        puts "#{target.name}"
+    end
+end
+
