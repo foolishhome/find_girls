@@ -20,27 +20,74 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6197925-096a-4fcb-90a0-b5c7b31ba058" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/findgirls/src/com/yy/medical/activity/live/LivePageFragment.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/computer_boy.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_actionbarsherlock_actionbarsherlock_apklib_2_0_6_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_chrisbanes_pulltorefresh_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/AndroidManifest.xml" afterPath="$PROJECT_DIR$/actionbarsherlock/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app-model/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app-model/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dialogs/AndroidManifest.xml" afterPath="$PROJECT_DIR$/dialogs/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/findgirls/src/com/yy/medical/activity/MainActivity.java" afterPath="$PROJECT_DIR$/findgirls/src/com/yy/medical/activity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/findgirls/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/findgirls/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/findgirls/res/layout/layout_tab_bottom.xml" afterPath="$PROJECT_DIR$/findgirls/res/layout/layout_tab_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app-model/pom.xml" afterPath="$PROJECT_DIR$/app-model/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/findgirls/pom.xml" afterPath="$PROJECT_DIR$/findgirls/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="c6197925-096a-4fcb-90a0-b5c7b31ba058" name="Default" comment="pulltorefreshlibrary">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-hdpi/default_ptr_flip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-mdpi/default_ptr_flip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-xhdpi/default_ptr_flip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-hdpi/default_ptr_rotate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-mdpi/default_ptr_rotate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-xhdpi/default_ptr_rotate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-hdpi/indicator_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-mdpi/indicator_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable-xhdpi/indicator_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/target/generated-sources/r/com/handmark/pulltorefresh/library/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/FlipLoadingLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/ILoadingLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/IPullToRefresh.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/LoadingLayoutProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/target/generated-sources/r/com/handmark/pulltorefresh/library/Manifest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/OverscrollHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshHorizontalScrollView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshScrollView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/extras/PullToRefreshWebView2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/target/generated-sources/r/com/handmark/pulltorefresh/library/R.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/RotateLoadingLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/extras/SoundPullEventListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/Utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/internal/ViewCompat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values/attrs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values/ids.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable/indicator_bg_bottom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/drawable/indicator_bg_top.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/library.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-ar/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-cs/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-de/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-es/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-fr/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-he/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-it/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-iw/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-ja/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-ko/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-nl/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-pl/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-pt/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-pt-rBR/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-ro/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-ru/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/values-zh/pull_refresh_strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/layout/pull_to_refresh_header_horizontal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/layout/pull_to_refresh_header_vertical.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/anim/slide_in_from_bottom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/anim/slide_in_from_top.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/anim/slide_out_to_bottom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pulltorefreshlibrary/res/anim/slide_out_to_top.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="findgirls-parent.iws" />
@@ -137,8 +184,8 @@
       <file leaf-file-name="BaseFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/findgirls/src/com/yy/medical/activity/BaseFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7728337">
-              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.76875">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -171,16 +218,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app-model/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -330,126 +367,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="findgirls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medical" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medical" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medical" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findgirls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appmodel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -720,7 +637,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -728,19 +645,19 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3949802" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -752,6 +669,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pulltorefreshlibrary" />
+    <option name="LAST_COMMIT_MESSAGE" value="pulltorefreshlibrary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1056,10 +977,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pulltorefreshlibrary/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5208333">
+          <caret line="460" column="7" selection-start-line="460" selection-start-column="7" selection-end-line="460" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/findgirls/src/com/yy/medical/activity/BaseFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7728337">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.76875">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
           <folding />
         </state>
       </provider>
