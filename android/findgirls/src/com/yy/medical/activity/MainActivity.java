@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTabHost;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
 
@@ -16,6 +18,7 @@ import com.duowan.mobile.utils.YLog;
 import com.yy.appmodel.YYAppModel;
 import com.yy.medical.BuildConfig;
 import com.yy.medical.R;
+import com.yy.medical.activity.live.LivePageFragment;
 import com.yy.medical.app.YYApp;
 
 import java.util.List;
@@ -55,9 +58,9 @@ public class MainActivity extends BaseFragmentActivity
     };
 
     private Class __fragmentArray[]={
-    };
-
-    private Class __fragmentDoctorArray[]={
+            LivePageFragment.class,
+            LivePageFragment.class,
+            LivePageFragment.class
     };
 
     private int __tabTextArray[]={
@@ -72,6 +75,12 @@ public class MainActivity extends BaseFragmentActivity
             CUSTOM_TAB
     };
 
+    private View makeTab(final int index, int text, int icon) {
+        View tab = getLayoutInflater().inflate(R.layout.layout_tab_bottom, null, false);
+        ImageView iconView = (ImageView) tab.findViewById(R.id.iv_image);
+        iconView.setImageResource(icon);
+        return tab;
+    }
 
     @TargetApi(11)
     @Override
@@ -91,6 +100,12 @@ public class MainActivity extends BaseFragmentActivity
             tabHost.getTabWidget().setDividerDrawable(null);
         }
 
+        tabHost.clearAllTabs();
+
+        int count = __fragmentArray.length;
+        for (int index = 0; index < count; ++index){
+            tabHost.addTab(tabHost.newTabSpec(__tagArray[index]).setIndicator(makeTab(index, __tabTextArray[index], __imageViewArray[index])), __fragmentArray[index], null);
+        }
 
         tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
@@ -164,7 +179,7 @@ public class MainActivity extends BaseFragmentActivity
         try {
             int menuFlag = WindowManager.LayoutParams.class.getField("FLAG_NEEDS_MENU_KEY").getInt(null);
             YLog.info(this, "menuFlag %d", menuFlag);
-            //zhongyongsheng 解决4.0后手机没有硬MENU键的问题
+            // 解决4.0后手机没有硬MENU键的问题
             getWindow().setFlags(menuFlag, menuFlag);
         } catch (Exception e) {
             YLog.error(this, "below 3.0 has no menuFlag." + e.getMessage());

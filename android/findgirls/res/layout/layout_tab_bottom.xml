@@ -18,36 +18,4 @@
         android:layout_alignTop="@id/iv_image"
         android:layout_height="1px"
         android:background="@color/actionbar_line"/>
-    <com.yy.a.widget.MessageCountTextView
-        android:id="@+id/tv_msg_count"
-        android:layout_alignTop="@id/iv_image"
-        android:layout_alignRight="@id/iv_image"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:minHeight="@dimen/msg_min_height"
-        android:minWidth="@dimen/msg_min_width"
-        android:gravity="center"
-        android:textSize="10sp"
-        android:singleLine="true"
-        android:text="9"
-        android:clickable="false"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:visibility="gone"
-        />
-    <!--<TextView-->
-        <!--android:id="@+id/tv_text"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_below="@id/iv_image"-->
-        <!--android:layout_marginLeft="@dimen/msg_title_margin_left"-->
-        <!--android:layout_marginTop="2dp"-->
-        <!--android:ellipsize="end"-->
-        <!--android:text="咨询"-->
-        <!--android:singleLine="true"-->
-        <!--android:textColor="@drawable/tab_text_color"-->
-        <!--android:textSize="@dimen/tiny_font_size"-->
-        <!--/>-->
 </RelativeLayout>

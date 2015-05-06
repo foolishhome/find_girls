@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -12,6 +11,7 @@
       <entry name="!?*.flex" />
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="false">
@@ -26,8 +26,16 @@
         <module name="android-styled-dialogs" />
         <module name="app-model" />
         <module name="findgirls" />
+        <module name="library" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="actionbarsherlock" target="1.5" />
+      <module name="android-styled-dialogs" target="1.5" />
+      <module name="app-model" target="1.5" />
+      <module name="findgirls" target="1.5" />
+      <module name="findgirls-parent" target="1.5" />
+      <module name="library" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-

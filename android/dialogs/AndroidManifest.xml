@@ -3,6 +3,6 @@
           package="eu.inmite.android.lib.dialogs"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="8"/>
     <application/>
 </manifest>
