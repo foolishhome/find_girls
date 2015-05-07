@@ -32,16 +32,10 @@ public class MainActivity extends BaseFragmentActivity
 
     private FragmentTabHost tabHost;
     public static final String START_TAB = "start_tab";
-    public static final String ENTER_CHANNEL_text = "enter_channel_text";
     public static final int START_TAB_RESULT = 9;
-    public static final String ACTION_FINISHED = "ACTION_FINISHED";
-    public static final String NOTIFY_INTENT = "notifyIntent";
     private static final String LIVE_TAB = "live";
-    private static final String CONTACTS_TAB = "contacts";
     private static final String ASK_TAB = "ask";
     private static final String CUSTOM_TAB = "custom";
-    private static final String YY3_0 = "yy3.0";
-    private static final int UPDATE_NOTIFY_ID = 1;
     public static boolean bQuit = false;
     Timer timer = new Timer();
     private int tabIndex = -1;

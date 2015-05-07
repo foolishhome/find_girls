@@ -39,6 +39,12 @@
             <type>apklib</type>
         </dependency>
         <dependency>
+            <groupId>com.github.chrisbanes.pulltorefresh</groupId>
+            <artifactId>library</artifactId>
+            <version>2.1</version>
+            <type>apklib</type>
+        </dependency>
+        <dependency>
             <groupId>com.alipay</groupId>
             <artifactId>alipaysdk</artifactId>
             <version>2.0.2</version>
