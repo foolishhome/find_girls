@@ -10,7 +10,7 @@
             android:layout_height="wrap_content"
             />
 
-    <com.yy.medical.activity.widget.viewpagerindicator.CirclePageIndicator
+    <com.findgirls.widget.viewpagerindicator.CirclePageIndicator
             android:id="@+id/page_indicator"
             android:layout_alignBottom="@id/view_pager"
             android:layout_width="match_parent"
