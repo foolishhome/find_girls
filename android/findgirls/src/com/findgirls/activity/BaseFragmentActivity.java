@@ -1,4 +1,4 @@
-package com.yy.medical.activity;
+package com.findgirls.activity;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -10,7 +10,7 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.appmodel.util.notification.NotificationCenter;
-import com.yy.medical.R;
+import com.findgirls.R;
 
 import eu.inmite.android.lib.dialogs.ISimpleDialogListener;
 import eu.inmite.android.lib.dialogs.PauseAble;

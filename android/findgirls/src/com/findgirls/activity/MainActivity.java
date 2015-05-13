@@ -1,4 +1,4 @@
-package com.yy.medical.activity;
+package com.findgirls.activity;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -15,11 +15,11 @@ import android.widget.TabHost;
 
 import com.actionbarsherlock.view.MenuItem;
 import com.duowan.mobile.utils.YLog;
-import com.yy.appmodel.YYAppModel;
-import com.yy.medical.BuildConfig;
-import com.yy.medical.R;
-import com.yy.medical.activity.live.LivePageFragment;
-import com.yy.medical.app.YYApp;
+import com.findgirls.BuildConfig;
+import com.findgirls.R;
+import com.findgirls.activity.live.LivePageFragment;
+import com.findgirls.app.YYApp;
+import com.findgirls.app.YYAppModel;
 
 import java.util.List;
 import java.util.Timer;

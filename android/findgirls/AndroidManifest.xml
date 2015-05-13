@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:versionCode="23008"
           android:versionName="2.0.5"
-          package="com.yy.medical">
+          package="com.findgirls">
 
     <uses-sdk
             android:minSdkVersion="9"

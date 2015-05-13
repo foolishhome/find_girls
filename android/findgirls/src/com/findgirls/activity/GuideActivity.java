@@ -1,4 +1,4 @@
-package com.yy.medical.activity;
+package com.findgirls.activity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import com.yy.medical.activity.widget.viewpagerindicator.CirclePageIndicator;
-import com.yy.medical.R;
+import com.findgirls.widget.viewpagerindicator.CirclePageIndicator;
+import com.findgirls.R;
 
 public class GuideActivity extends SherlockActivity {
 

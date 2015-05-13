@@ -20,9 +20,9 @@
     </properties>
 
     <modules>
+        <module>pulltorefreshlibrary</module>
 		<module>actionbarsherlock</module>
         <module>dialogs</module>
-        <module>pulltorefreshlibrary</module>
 		<module>app-model</module>
         <module>findgirls</module>
     </modules>

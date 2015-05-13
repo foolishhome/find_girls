@@ -1,4 +1,4 @@
-package com.yy.medical.activity;
+package com.findgirls.activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

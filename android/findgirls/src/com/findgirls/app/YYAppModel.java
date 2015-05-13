@@ -1,4 +1,4 @@
-package com.yy.appmodel;
+package com.findgirls.app;
 
 import android.app.Application;
 import android.content.Context;

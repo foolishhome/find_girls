@@ -1,28 +1,39 @@
-package com.yy.medical.activity.live;
+package com.findgirls.activity.live;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
+import com.findgirls.widget.ServerLoadingViewAnimator;
+import com.findgirls.R;
+import com.findgirls.activity.BaseFragment;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.yy.medical.R;
-import com.yy.medical.activity.BaseFragment;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
 
-public class LivePageFragment extends BaseFragment {
+import org.apache.http.Header;
+import org.json.JSONObject;
+
+public class LivePageFragment extends BaseFragment implements PullToRefreshBase.OnRefreshListener2, ServerLoadingViewAnimator.RetryClickListener {
     private PullToRefreshListView listView;
+    private LivePageAdapter adapter;
+    private ServerLoadingViewAnimator serverLoadingViewAnimator;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View root = inflater.inflate(R.layout.activity_my_yb, container, false);
+        View root = inflater.inflate(R.layout.layout_pull_to_refreshlist, container, false);
 
-        adapter = new LiveMainPageAdapter(getActivity());
-        serverLoadingViewAnimator = (ServerLoadingViewAnimator) findViewById(R.id.loading_animator);
-        listView = (PullToRefreshListView) serverLoadingViewAnimator.addContentView(R.layout.layout_pull_to_refresh_expanded_list, adapter, getString(R.string.nocontent));
+        adapter = new LivePageAdapter();
+        serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
+//        LinearLayout layout = (LinearLayout) serverLoadingViewAnimator.addContentView(R.layout.layout_pull_to_refreshlist, adapter, getString(R.string.nocontent));
+        listView = (PullToRefreshListView) root.findViewById(R.id.list_view);
         listView.setOnRefreshListener(this);
-        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.INSTANCE, false, true));
+//        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.INSTANCE, false, true));
         listView.setAdapter(adapter);
 
         query();
@@ -31,4 +42,36 @@ public class LivePageFragment extends BaseFragment {
     }
 
 
+    private void query() {
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.get("http://172.19.207.37:9292/mobile/girlslist", new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                System.out.println(response);
+                adapter.setLivesData(response);
+                listView.onRefreshComplete();
+            }
+            @Override
+            public void onFailure(int statusCode, org.apache.http.Header[] headers, java.lang.Throwable throwable, org.json.JSONObject errorResponse) {
+                System.out.println(errorResponse);
+                serverLoadingViewAnimator.showFailView(LivePageFragment.this);
+                listView.onRefreshComplete();
+            }
+        });
+
+    }
+
+    public void onRetryClick() {
+        query();
+    }
+
+    @Override
+    public void onPullDownToRefresh(PullToRefreshBase refreshView) {
+        query();
+    }
+
+    @Override
+    public void onPullUpToRefresh(PullToRefreshBase refreshView) {
+
+    }
 }

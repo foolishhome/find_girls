@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.yy.medical.activity.widget.viewpagerindicator;
+package com.findgirls.widget.viewpagerindicator;
 
 import android.support.v4.view.ViewPager;
 

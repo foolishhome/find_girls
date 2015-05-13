@@ -1,4 +1,4 @@
-package com.yy.medical.activity.live;
+package com.findgirls.activity.live;
 
 /**
  * Created by computer-boy on 15/4/22.

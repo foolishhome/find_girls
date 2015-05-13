@@ -1,4 +1,4 @@
-package com.yy.medical.activity;
+package com.findgirls.activity;
 
 import android.app.NotificationManager;
 import android.content.Context;

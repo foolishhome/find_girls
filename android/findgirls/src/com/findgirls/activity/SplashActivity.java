@@ -1,4 +1,4 @@
-package com.yy.medical.activity;
+package com.findgirls.activity;
 
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -12,8 +12,8 @@ import android.preference.PreferenceManager;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.duowan.mobile.utils.YLog;
-import com.yy.appmodel.YYAppModel;
-import com.yy.medical.R;
+import com.findgirls.R;
+import com.findgirls.app.YYAppModel;
 
 public class SplashActivity extends SherlockActivity {
     public static final String INSTALL_SHORTCUT = "install_shortcut";

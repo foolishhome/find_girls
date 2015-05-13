@@ -10,7 +10,7 @@ import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
 import android.widget.ViewAnimator;
 
-import com.yy.medical.R;
+import com.findgirls.R;
 
 public class ServerLoadingViewAnimator extends ViewAnimator {
 
