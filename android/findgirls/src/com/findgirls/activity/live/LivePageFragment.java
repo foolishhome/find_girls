@@ -30,10 +30,8 @@ public class LivePageFragment extends BaseFragment implements PullToRefreshBase.
 
         adapter = new LivePageAdapter();
         serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
-//        LinearLayout layout = (LinearLayout) serverLoadingViewAnimator.addContentView(R.layout.layout_pull_to_refreshlist, adapter, getString(R.string.nocontent));
         listView = (PullToRefreshListView) root.findViewById(R.id.list_view);
         listView.setOnRefreshListener(this);
-//        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.INSTANCE, false, true));
         listView.setAdapter(adapter);
 
         query();

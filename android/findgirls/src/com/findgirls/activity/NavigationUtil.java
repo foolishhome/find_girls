@@ -1,7 +1,15 @@
 package com.findgirls.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+
+import com.findgirls.R;
+import com.findgirls.activity.profiles.LoginActivity;
+import com.findgirls.activity.profiles.SettingActivity;
+import com.findgirls.activity.profiles.SuggestActivity;
+import com.findgirls.widget.Dialogs;
+import com.findgirls.widget.WebViewActivity;
 
 public class NavigationUtil {
     public static void toGuide(Activity activity) {
@@ -14,12 +22,48 @@ public class NavigationUtil {
         activity.startActivity(intent);
     }
 
-/*
     public static void toLogin(Context activity) {
         Intent intent = new Intent(activity, LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         activity.startActivity(intent);
     }
+
+    public static void toSuggestion(Activity act) {
+        if (act == null) {
+            return;
+        }
+
+        if (Dialogs.showNoLoginMessage(act)){
+            return;
+        }
+
+        Intent intent = new Intent(act, SuggestActivity.class);
+        act.startActivity(intent);
+    }
+
+    public static void toSetting(Activity act) {
+        if (act == null) {
+            return;
+        }
+        Intent intent = new Intent(act, SettingActivity.class);
+        act.startActivity(intent);
+    }
+
+    public static void toRegister(Activity act) {
+        toWeb(act, "https://udb.yy.com/account/register.do");
+    }
+
+    public static void toForgotPwd(Activity act) {
+        toWeb(act, "https://udb.yy.com/account/forgetPassword2.do");
+    }
+    public static void toWeb(Context context, String linkUrl) {
+        Intent intent = new Intent(context, WebViewActivity.class);
+        intent.putExtra(WebViewActivity.URL, linkUrl);
+        context.startActivity(intent);
+    }
+
+/*
+
 
     public static void toLoginFromRegist(Context activity, String accout) {
         Intent intent = new Intent(activity, LoginActivity.class);
@@ -42,7 +86,7 @@ public class NavigationUtil {
         if(DialogUtil.showNoLoginMessage(activity))
             return;
 
-       if (YYAppModel.INSTANCE.channelModel().isRecording() && (YYAppModel.INSTANCE.channelModel().getSid() != channelId || YYAppModel.INSTANCE.channelModel().getSubSid() != subSid)) {
+       if (AppModel.INSTANCE.channelModel().isRecording() && (AppModel.INSTANCE.channelModel().getSid() != channelId || AppModel.INSTANCE.channelModel().getSubSid() != subSid)) {
             Dialogs.StopRecordDialogFragment.showStopRecordDialogFragment(activity, channelId, subSid, formAct);
         } else
         {
@@ -92,18 +136,7 @@ public class NavigationUtil {
         act.startActivity(intent);
     }
 
-    public static void toSuggestion(Activity act) {
-        if (act == null) {
-            return;
-        }
 
-        if (DialogUtil.showNoLoginMessage(act)){
-            return;
-        }
-
-        Intent intent = new Intent(act, SuggestActivity.class);
-        act.startActivity(intent);
-    }
 
 
     public static void toRegister(Activity activity) {
@@ -111,7 +144,7 @@ public class NavigationUtil {
     }
 
     public static void toForgotPwd(Activity act) {
-        //YYAppModel.INSTANCE.statisticModel().clickReport(StatisticModel.FORGOT_PWD_CLICK);
+        //AppModel.INSTANCE.statisticModel().clickReport(StatisticModel.FORGOT_PWD_CLICK);
         toWeb(act, "https://udb.yy.com/account/forgetPassword2.do");
     }
 
@@ -254,19 +287,19 @@ public class NavigationUtil {
     }
 
     public static void toCurrentChannel(Context activity) {
-        if (YYAppModel.INSTANCE.channelModel().isValid()) {
-            toChannel(activity, YYAppModel.INSTANCE.channelModel().getSid(), YYAppModel.INSTANCE.channelModel().getSubSid(), null);
+        if (AppModel.INSTANCE.channelModel().isValid()) {
+            toChannel(activity, AppModel.INSTANCE.channelModel().getSid(), AppModel.INSTANCE.channelModel().getSubSid(), null);
         }
     }
 
     public static void serviceToCurrentChannel(Context context) {
-        if (YYAppModel.INSTANCE.channelModel().isValid()) {
+        if (AppModel.INSTANCE.channelModel().isValid()) {
             Intent intent = new Intent(context, ChannelActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra(ChannelActivity.JOIN_SID, YYAppModel.INSTANCE.channelModel().getSid());
+            intent.putExtra(ChannelActivity.JOIN_SID, AppModel.INSTANCE.channelModel().getSid());
             intent.putExtra(ChannelActivity.JOIN_SSID, 0);
             context.startActivity(intent);
-            //YYAppModel.INSTANCE.statisticModel().clickReport(StatisticModel.ENTER_CHANNEL_FROM_FLOATING_WINDOW);
+            //AppModel.INSTANCE.statisticModel().clickReport(StatisticModel.ENTER_CHANNEL_FROM_FLOATING_WINDOW);
         }
     }
 
@@ -303,7 +336,7 @@ public class NavigationUtil {
     }
 
     public static void toDetail(Context context, long uid) {
-        if (uid == YYAppModel.INSTANCE.loginModel().getUid()) {
+        if (uid == AppModel.INSTANCE.loginModel().getUid()) {
             return;
         }
         Intent intent = new Intent(context, DetailActivity.class);

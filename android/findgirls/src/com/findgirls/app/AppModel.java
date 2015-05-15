@@ -9,12 +9,13 @@ import android.os.HandlerThread;
 import android.os.Looper;
 
 import com.appmodel.DBModel;
+import com.appmodel.SDKModel;
 import com.appmodel.YYSdkConfig;
 import com.appmodel.db.DBAppConst;
 import com.appmodel.db.DBPlainAdapter;
 import com.appmodel.db.DBReqBase;
 import com.appmodel.db.IDBObserver;
-import com.appmodel.notification.LoginCallback;
+import com.appmodel.notification.SDKCallback;
 import com.appmodel.util.Api14AppLifecycle;
 import com.appmodel.util.AppLifecycle;
 import com.appmodel.util.DefaultAppLifecycle;
@@ -22,7 +23,7 @@ import com.appmodel.util.StringUtils;
 import com.appmodel.util.notification.NotificationCenter;
 import com.duowan.mobile.utils.YLog;
 
-public enum YYAppModel {
+public enum AppModel {
 
     INSTANCE {
 
@@ -31,6 +32,8 @@ public enum YYAppModel {
     private boolean hasInit = false;
     private boolean splashShowed = false;
 
+    private DialogModel dialogModel;
+    private SDKModel sdkModel;
     private DBModel dbModel;
     private String mDBName = "";
     private static final int dbtype = 0;
@@ -41,12 +44,12 @@ public enum YYAppModel {
     private Application application;
     private AppLifecycle appLifecycle;
 
-    private YYAppModel() {
+    private AppModel() {
     }
 
 
     public void DBModelRegisterObserver(long appid, IDBObserver observer) {
-        DBModel model = YYAppModel.INSTANCE.dbModel();
+        DBModel model = AppModel.INSTANCE.dbModel();
         if (model != null) {
             model.RegisterObserver(appid, observer);
         }
@@ -55,7 +58,7 @@ public enum YYAppModel {
         }
     }
     public void DBModelUnRegisterObserver(long appid, IDBObserver observer) {
-        DBModel model = YYAppModel.INSTANCE.dbModel();
+        DBModel model = AppModel.INSTANCE.dbModel();
         if (model != null) {
             model.unRegisterObserver(appid, observer);
         }
@@ -64,7 +67,7 @@ public enum YYAppModel {
         }
     }
     public int DBModelPutDBReq(DBReqBase req) {
-        DBModel model = YYAppModel.INSTANCE.dbModel();
+        DBModel model = AppModel.INSTANCE.dbModel();
         if (model != null) {
             return model.putDBReq(req);
         }
@@ -72,6 +75,13 @@ public enum YYAppModel {
             YLog.debug(this, "null dbmodel operate DBModelPutDBReq");
         }
         return 0;
+    }
+
+    public DialogModel dialogModel() {
+        return dialogModel;
+    }
+    public SDKModel sdkModel() {
+        return sdkModel;
     }
     // 由于dbModel可能在退出账号后置空，所以外部不能随意操作
     private DBModel dbModel() {
@@ -114,7 +124,7 @@ public enum YYAppModel {
     }
 
     private void initCallbacks() {
-        NotificationCenter.INSTANCE.addCallbacks(LoginCallback.class);
+        NotificationCenter.INSTANCE.addCallbacks(SDKCallback.class);
     }
 
     public boolean hasInit() {
@@ -122,15 +132,22 @@ public enum YYAppModel {
     }
 
     private void initModels() {
+        if (dialogModel == null)
+            dialogModel = new DialogModel();
+        dialogModel.init(application, ioHandler);
 
-        if (dbModel == null) {
+        if (sdkModel == null)
+            sdkModel = new SDKModel();
+        sdkModel.init(application, ioHandler);
+
+        if (dbModel == null)
             dbModel = new DBModel();
-        }
         dbModel.init(application, ioHandler);
     }
 
-    void unInitModels()
-    {
+    void unInitModels() {
+        dialogModel.clear();
+        sdkModel.clear();
         dbModel.clear();
     }
 
@@ -152,9 +169,7 @@ public enum YYAppModel {
         return old;
     }
 
-    void unInit()
-    {
-        //NotificationCenter.INSTANCE.removeAll();
+    void unInit() {
         unInitModels();
     }
 

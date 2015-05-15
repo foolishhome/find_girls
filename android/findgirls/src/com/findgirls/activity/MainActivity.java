@@ -17,9 +17,11 @@ import com.actionbarsherlock.view.MenuItem;
 import com.duowan.mobile.utils.YLog;
 import com.findgirls.BuildConfig;
 import com.findgirls.R;
+import com.findgirls.activity.MoodDiary.MoodListFragment;
 import com.findgirls.activity.live.LivePageFragment;
-import com.findgirls.app.YYApp;
-import com.findgirls.app.YYAppModel;
+import com.findgirls.activity.profiles.ProfileFragment;
+import com.findgirls.app.App;
+import com.findgirls.app.AppModel;
 
 import java.util.List;
 import java.util.Timer;
@@ -53,8 +55,8 @@ public class MainActivity extends BaseFragmentActivity
 
     private Class __fragmentArray[]={
             LivePageFragment.class,
-            LivePageFragment.class,
-            LivePageFragment.class
+            MoodListFragment.class,
+            ProfileFragment.class
     };
 
     private int __tabTextArray[]={
@@ -129,15 +131,15 @@ public class MainActivity extends BaseFragmentActivity
         if (!BuildConfig.DEBUG) {
             // 检查更新
 //            if (NetworkUtils.getMyNetworkType(getApplicationContext()) == NetworkUtils.NET_WIFI) {
-//                YYAppModel.INSTANCE.updateModel().queryLastVersionInfo();
+//                AppModel.INSTANCE.updateModel().queryLastVersionInfo();
 //            }
         }
 
 
-        if(YYApp.isNetworkConnected(getActivity()))
+        if(App.isNetworkConnected(getActivity()))
         {
 //            linkState = TypeInfo.LinkState.LinkStateConnected;
-//            YYAppModel.INSTANCE.setNetWorkState(true);
+//            AppModel.INSTANCE.setNetWorkState(true);
 //            __setActivityTitle();
         }
 
@@ -217,14 +219,14 @@ public class MainActivity extends BaseFragmentActivity
 //                    _exitApp();
 //                }
 //            });
-//            YYAppModel.INSTANCE.dialogModel().show(exitDialog);
+//            AppModel.INSTANCE.dialogModel().show(exitDialog);
         }
 
         return super.onKeyDown(keyCode, event);
     }
 
     private void _exitApp() {
-        YYAppModel.INSTANCE.exit(getActivity());
+        AppModel.INSTANCE.exit(getActivity());
         finish();
     }
 

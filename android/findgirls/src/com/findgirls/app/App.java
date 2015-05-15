@@ -3,6 +3,9 @@ package com.findgirls.app;
 import android.annotation.TargetApi;
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -27,14 +30,14 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 
 import java.io.File;
 
-public class YYApp extends Application
+public class App extends Application
 {
 
     @TargetApi(11)
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.v("find_girl", "startApp YYApp onCreate");
+        Log.v("find_girl", "startApp App onCreate");
 
         initImageLoader();
 
@@ -43,8 +46,8 @@ public class YYApp extends Application
                     .penaltyLog().build());
         }
 
-        if (!YYAppModel.INSTANCE.hasInit()) {
-            YYAppModel.INSTANCE.init(this);
+        if (!AppModel.INSTANCE.hasInit()) {
+            AppModel.INSTANCE.init(this);
         }
 
 //        LiveService.start(this);
@@ -99,5 +102,45 @@ public class YYApp extends Application
             }
         }
         return false;
+    }
+
+    public static String getAppVersion(Context context) {
+        if (context == null) {
+            return "";
+        }
+        PackageInfo packInfo = getPackageInfo(context);
+        if (packInfo != null && packInfo.versionName == null) {
+            return "";
+        }
+        if (packInfo.versionName.contains("SNAPSHOT")) {
+            return packInfo.versionName.substring(0, packInfo.versionName.lastIndexOf('.')) + "." + getSvnBuildVersion(context);
+        } else {
+            return packInfo.versionName;
+        }
+    }
+    private static PackageInfo getPackageInfo(Context context) {
+        PackageInfo packInfo = null;
+        try {
+            PackageManager packageManager = context.getPackageManager();
+            packInfo = packageManager.getPackageInfo(context.getPackageName(), 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            YLog.error("PackageManager.NameNotFoundException context", e);
+        }
+        return packInfo;
+    }
+    private static int getSvnBuildVersion(Context context) {
+        int svnBuildVer = 0;
+        try {
+            if (context != null) {
+                String pkgName = context.getPackageName();
+                ApplicationInfo appInfo = context.getPackageManager().getApplicationInfo(pkgName, PackageManager.GET_META_DATA);
+                svnBuildVer = appInfo.metaData.getInt("SvnBuildVersion");
+                YLog.info("yymedical","SvnBuildVersion:%d",svnBuildVer);
+            }
+        } catch (Exception e) {
+            YLog.error(App.class, e);
+        }
+
+        return svnBuildVer;
     }
 }

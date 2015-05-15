@@ -13,7 +13,7 @@ import android.preference.PreferenceManager;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.duowan.mobile.utils.YLog;
 import com.findgirls.R;
-import com.findgirls.app.YYAppModel;
+import com.findgirls.app.AppModel;
 
 public class SplashActivity extends SherlockActivity {
     public static final String INSTALL_SHORTCUT = "install_shortcut";
@@ -24,7 +24,7 @@ public class SplashActivity extends SherlockActivity {
         YLog.verbose("yy3.0", "startApp SplashActivity onCreate");
         setContentView(R.layout.activity_splash);
 
-        if (YYAppModel.INSTANCE.showSplash()) {
+        if (AppModel.INSTANCE.showSplash()) {
             toMainOrGuide();
         } else {
             new Handler().postDelayed(new Runnable() {

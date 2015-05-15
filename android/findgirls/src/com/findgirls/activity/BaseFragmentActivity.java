@@ -11,6 +11,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.appmodel.util.notification.NotificationCenter;
 import com.findgirls.R;
+import com.findgirls.app.AppModel;
 
 import eu.inmite.android.lib.dialogs.ISimpleDialogListener;
 import eu.inmite.android.lib.dialogs.PauseAble;
@@ -59,12 +60,12 @@ public abstract class BaseFragmentActivity extends SherlockFragmentActivity impl
     protected void onResumeFragments() {
         super.onResumeFragments();
         paused = false;
-//        YYAppModel.INSTANCE.dialogModel().onResumeFragments(this);
+        AppModel.INSTANCE.dialogModel().onResumeFragments(this);
     }
 
     @Override
     protected void onPause() {
-//        YYAppModel.INSTANCE.dialogModel().onPause(this);
+        AppModel.INSTANCE.dialogModel().onPause(this);
         super.onPause();
         hiidoOnPause();
         paused = true;

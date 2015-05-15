@@ -1,12 +1,10 @@
 package com.appmodel.notification;
 
-public interface LoginCallback {
-
+public interface SDKCallback {
     /**
      * 登录结果回调
      */
-    interface Result {
-
+    interface Login {
         /**
          * 登录成功,可以通过调用{@code com.yy.a.appmodel.LoginModel.getUid()}获取登录用户uid
          */
@@ -21,12 +19,19 @@ public interface LoginCallback {
         void onError(int result, String message);
     }
 
-
     interface Logout {
         void onLogout();
     }
 
     interface NetworkStatus {
         void onNetworkStatusChange(boolean online);
+    }
+
+    interface Suggestion {
+        void onSuggestion(boolean success);
+    }
+
+    interface UpdateProfiles {
+
     }
 }
