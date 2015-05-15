@@ -17,6 +17,7 @@ import org.json.JSONObject;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
@@ -108,7 +109,12 @@ public class MoodListAdapter extends BaseAdapter {
             return;
         final Mood mood = moodData.get(index);
         if (mood != null) {
-            holder.date.setText((mood.date != null)? mood.date.toString(): "");
+            if (mood.date == null)
+                holder.date.setText("");
+            else {
+                SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd \n hh:mm:ss");
+                holder.date.setText(df.format(mood.date));
+            }
             holder.text.setText(String.valueOf((mood.text != null)? mood.text: ""));
 
             holder.root.setVisibility(View.VISIBLE);

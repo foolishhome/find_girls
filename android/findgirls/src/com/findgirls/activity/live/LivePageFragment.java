@@ -13,6 +13,8 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 import org.apache.http.Header;
 import org.json.JSONObject;
@@ -29,9 +31,12 @@ public class LivePageFragment extends BaseFragment implements PullToRefreshBase.
         View root = inflater.inflate(R.layout.layout_pull_to_refreshlist, container, false);
 
         adapter = new LivePageAdapter();
-        serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
         listView = (PullToRefreshListView) root.findViewById(R.id.list_view);
+        serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
+        serverLoadingViewAnimator.attachContentView(listView, adapter, getString(R.string.nocontent));
+
         listView.setOnRefreshListener(this);
+        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), false, true));
         listView.setAdapter(adapter);
 
         query();

@@ -30,6 +30,17 @@ public class ServerLoadingViewAnimator extends ViewAnimator {
         super(context, attrs);
     }
 
+    public void attachContentView(View contentView, final Adapter adapter, String emptyText) {
+        observer = new ListObserver(adapter);
+        adapter.registerDataSetObserver(observer);
+
+        this.emptyText = emptyText;
+        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View loading = inflater.inflate(R.layout.layout_loading, null);
+
+        addView(loading, 0);
+        showLoadingView();
+    }
 
     public View addContentView(int id, final Adapter adapter, String emptyText) {
         observer = new ListObserver(adapter);

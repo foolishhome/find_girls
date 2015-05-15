@@ -28,8 +28,10 @@ public class MoodListFragment extends BaseFragment implements PullToRefreshBase.
         View root = inflater.inflate(R.layout.layout_pull_to_refreshlist, container, false);
 
         adapter = new MoodListAdapter();
-        serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
         listView = (PullToRefreshListView) root.findViewById(R.id.list_view);
+        serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
+        serverLoadingViewAnimator.attachContentView(listView, adapter, getString(R.string.nocontent));
+
         listView.setOnRefreshListener(this);
         listView.setAdapter(adapter);
 

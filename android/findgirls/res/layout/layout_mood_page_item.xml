@@ -8,7 +8,7 @@
         android:id="@+id/top_line"
         android:layout_width="2dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="70dp"
         android:background="@color/red" />
 
     <ImageView
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/top_line"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="60dp"
         android:src="@drawable/tab_new_message" />
 
     <TextView
@@ -25,7 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/top_line"
-        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:layout_marginLeft="5dp"
         android:text="时间" />
 
     <View
@@ -33,14 +34,14 @@
         android:layout_width="2dp"
         android:layout_height="50dp"
         android:layout_below="@id/img_icon"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="70dp"
         android:background="@color/red" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/top_line"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="90dp"
         android:background="@drawable/background_tab"
         android:orientation="horizontal" >
 
