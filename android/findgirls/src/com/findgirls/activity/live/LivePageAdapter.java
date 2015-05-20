@@ -44,6 +44,10 @@ public class LivePageAdapter extends BaseAdapter {
 
     public void setLivesData(JSONObject data) {
         liveData.clear();
+        appendLivesData(data);
+    }
+
+    public void appendLivesData(JSONObject data) {
         try {
             int result = data.getInt("result");
             switch (result) {

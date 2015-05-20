@@ -7,7 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/app-model/app-model.iml" filepath="$PROJECT_DIR$/app-model/app-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/findgirls/findgirls.iml" filepath="$PROJECT_DIR$/findgirls/findgirls.iml" />
       <module fileurl="file://$PROJECT_DIR$/findgirls-parent.iml" filepath="$PROJECT_DIR$/findgirls-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pulltorefreshlibrary/library.iml" filepath="$PROJECT_DIR$/pulltorefreshlibrary/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefreshlibrary/pulltorefresh-library.iml" filepath="$PROJECT_DIR$/pulltorefreshlibrary/pulltorefresh-library.iml" />
     </modules>
   </component>
 </project>
+

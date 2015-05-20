@@ -27,14 +27,14 @@ public class MoodListAdapter extends BaseAdapter {
         String text;
         int upUserCounts;
     }
-    static class LiveHolder {
+    static class MoodHolder {
         public TextView date;
         public TextView text;
         public ImageView thumbs;
 
         public View root;
     }
-    private View createItem(ViewGroup parent, LiveHolder holder) {
+    private View createItem(ViewGroup parent, MoodHolder holder) {
         View root = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_mood_page_item, null);
         holder.root = root;
         holder.date = (TextView) root.findViewById(R.id.tv_date);
@@ -46,8 +46,13 @@ public class MoodListAdapter extends BaseAdapter {
 
     private ArrayList<Mood> moodData = new ArrayList<Mood>();
 
+
     public void setMoodData(JSONObject data) {
         moodData.clear();
+        appendMoodData(data);
+    }
+
+    public void appendMoodData(JSONObject data) {
         try {
             SimpleDateFormat simpledateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -94,17 +99,17 @@ public class MoodListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        if (null == view || view.getTag() instanceof LiveHolder) {
-            view = createItem(viewGroup, new LiveHolder());
+        if (null == view || view.getTag() instanceof MoodHolder) {
+            view = createItem(viewGroup, new MoodHolder());
         }
 
-        LiveHolder holder = (LiveHolder)view.getTag();
-        setLiveItemData(i, viewGroup, holder);
+        MoodHolder holder = (MoodHolder)view.getTag();
+        setMoodItemData(i, viewGroup, holder);
 
         return view;
     }
 
-    private void setLiveItemData(int index, final ViewGroup parent, LiveHolder holder) {
+    private void setMoodItemData(int index, final ViewGroup parent, MoodHolder holder) {
         if (index < 0 || index >= moodData.size())
             return;
         final Mood mood = moodData.get(index);

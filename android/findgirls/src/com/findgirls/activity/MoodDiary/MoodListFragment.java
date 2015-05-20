@@ -12,6 +12,8 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 import org.apache.http.Header;
 import org.json.JSONObject;
@@ -20,6 +22,9 @@ public class MoodListFragment extends BaseFragment implements PullToRefreshBase.
     private PullToRefreshListView listView;
     private MoodListAdapter adapter;
     private ServerLoadingViewAnimator serverLoadingViewAnimator;
+
+    private int start;
+    private static final int PAGE = 10;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,24 +35,30 @@ public class MoodListFragment extends BaseFragment implements PullToRefreshBase.
         adapter = new MoodListAdapter();
         listView = (PullToRefreshListView) root.findViewById(R.id.list_view);
         serverLoadingViewAnimator = (ServerLoadingViewAnimator) root.findViewById(R.id.loading_animator);
-        serverLoadingViewAnimator.attachContentView(listView, adapter, getString(R.string.nocontent));
+        serverLoadingViewAnimator.attachContentView(adapter, getString(R.string.nocontent));
+        listView.setEmptyView(serverLoadingViewAnimator);
 
         listView.setOnRefreshListener(this);
+        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), false, true));
         listView.setAdapter(adapter);
 
-        query();
+        query(0);
 
         return root;
     }
 
 
-    private void query() {
+    private void query(int st) {
+        start = st;
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://172.19.207.37:9292/mobile/mood?start=0&size=10", new JsonHttpResponseHandler() {
+        client.get("http://172.19.207.12:9292/mobile/mood?start=" + start + "&size=10", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 System.out.println(response);
-                adapter.setMoodData(response);
+                if (start == 0)
+                    adapter.setMoodData(response);
+                else
+                    adapter.appendMoodData(response);
                 listView.onRefreshComplete();
             }
             @Override
@@ -61,16 +72,16 @@ public class MoodListFragment extends BaseFragment implements PullToRefreshBase.
     }
 
     public void onRetryClick() {
-        query();
+        query(start);
     }
 
     @Override
     public void onPullDownToRefresh(PullToRefreshBase refreshView) {
-        query();
+        query(0);
     }
 
     @Override
     public void onPullUpToRefresh(PullToRefreshBase refreshView) {
-
+        query(start + 10);
     }
 }

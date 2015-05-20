@@ -30,7 +30,7 @@ public class ServerLoadingViewAnimator extends ViewAnimator {
         super(context, attrs);
     }
 
-    public void attachContentView(View contentView, final Adapter adapter, String emptyText) {
+    public void attachContentView(final Adapter adapter, String emptyText) {
         observer = new ListObserver(adapter);
         adapter.registerDataSetObserver(observer);
 
