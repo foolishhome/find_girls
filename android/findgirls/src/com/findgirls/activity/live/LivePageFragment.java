@@ -50,7 +50,6 @@ public class LivePageFragment extends BaseFragment implements PullToRefreshBase.
 
     private void query(int st) {
         start = st;
-        listView.setRefreshing();
         AsyncHttpClient client = new AsyncHttpClient();
         client.get("http://172.19.207.12:9292/mobile/girlslist?start=" + start + "&size=10", new JsonHttpResponseHandler() {
             @Override
@@ -65,8 +64,8 @@ public class LivePageFragment extends BaseFragment implements PullToRefreshBase.
             @Override
             public void onFailure(int statusCode, org.apache.http.Header[] headers, java.lang.Throwable throwable, org.json.JSONObject errorResponse) {
                 System.out.println(errorResponse);
-                listView.onRefreshComplete();
                 serverLoadingViewAnimator.showFailView(LivePageFragment.this);
+                listView.onRefreshComplete();
             }
         });
 

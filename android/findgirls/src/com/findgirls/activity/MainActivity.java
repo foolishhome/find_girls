@@ -22,6 +22,7 @@ import com.findgirls.activity.live.LivePageFragment;
 import com.findgirls.activity.profiles.ProfileFragment;
 import com.findgirls.app.App;
 import com.findgirls.app.AppModel;
+import com.findgirls.widget.Dialogs;
 
 import java.util.List;
 import java.util.Timer;
@@ -212,14 +213,14 @@ public class MainActivity extends BaseFragmentActivity
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU) {
-//            final Dialogs.TipBottomDialogFragment exitDialog = new Dialogs.TipBottomDialogFragment();
-//            exitDialog.setPositiveButton(R.string.str_exit_app, new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    _exitApp();
-//                }
-//            });
-//            AppModel.INSTANCE.dialogModel().show(exitDialog);
+            final Dialogs.TipBottomDialogFragment exitDialog = new Dialogs.TipBottomDialogFragment();
+            exitDialog.setPositiveButton(R.string.str_exit_app, new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    _exitApp();
+                }
+            });
+            AppModel.INSTANCE.dialogModel().show(exitDialog);
         }
 
         return super.onKeyDown(keyCode, event);

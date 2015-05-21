@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.findgirls.widget.viewpagerindicator.CirclePageIndicator;
 import com.findgirls.R;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 public class GuideActivity extends SherlockActivity {
 
@@ -29,7 +30,6 @@ public class GuideActivity extends SherlockActivity {
                 final ImageView imageView = new ImageView(container.getContext());
                 ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
                 imageView.setLayoutParams(params);
-//                imageView.setBackgroundColor(getResources().getColor(R.color.red));
                 imageView.setAdjustViewBounds(true);
                 imageView.setScaleType(ImageView.ScaleType.CENTER);
                 container.addView(imageView);
@@ -53,7 +53,9 @@ public class GuideActivity extends SherlockActivity {
                         }
                     });
                 }
-                imageView.setImageResource(image);
+                ImageLoader.getInstance().displayImage("drawable://" + image, imageView);
+                // will out of memory in low level machine
+                // imageView.setImageResource(image);
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 return imageView;
             }

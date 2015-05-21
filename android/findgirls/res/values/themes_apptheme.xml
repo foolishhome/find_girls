@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- Generated with http://android-holo-colors.com -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AppTheme" parent="@style/_AppTheme"/>
@@ -9,33 +6,27 @@
         <item name="android:textColorSecondary">@color/text_shadow_gray</item>
         <item name="android:editTextStyle">@style/EditTextAppTheme</item>
         <item name="android:windowBackground">@color/window_bg_grey</item>
-        <item name="android:textColorHighlight">#99e47139</item>
         <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
         <item name="android:buttonStyle">@style/ButtonAppTheme</item>
         <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
-        <item name="android:dropDownSpinnerStyle">@style/SpinnerAppTheme</item>
         <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
         <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
         <item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
         <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
         <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
         <item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
-        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_dark</item>
-        <item name="android:activatedBackgroundIndicator">@drawable/apptheme_activated_background_holo_light</item>
+        <item name="activatedBackgroundIndicator">@drawable/apptheme_activated_background_holo_light</item>
 
-        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
         <item name="sdlDialogStyle">@style/DialogStyleLight.Custom</item>
-        <item name="android:homeAsUpIndicator">@color/tranparent</item>
+        <item name="homeAsUpIndicator">@color/tranparent</item>
         <item name="selectableItemBackground">@drawable/selectable_item_dark</item>
-        <item name="android:selectableItemBackground">@drawable/selectable_item_dark</item>
 
         <item name="searchAutoCompleteTextView">@style/SearchEditTextTheme</item>
-        <item name="android:actionMenuTextAppearance">@style/Widget.Styled.ActionBar.MenuItem</item>
-        <item name="android:actionMenuTextColor">@color/actionbar_title</item>
-        <item name="android:popupMenuStyle">@style/PopupMenu.MyAppTheme</item>
-        <item name="android:dividerVertical">@color/black</item>
+        <item name="actionMenuTextAppearance">@style/Widget.Styled.ActionBar.MenuItem</item>
+        <item name="actionMenuTextColor">@color/actionbar_title</item>
+        <item name="popupMenuStyle">@style/PopupMenu.MyAppTheme</item>
     </style>
-
 
     <style name="PopupMenu.MyAppTheme" parent="@style/Widget.Sherlock.ListPopupWindow">
         <item name="android:popupBackground">@drawable/bg_action_bar</item>
@@ -56,20 +47,19 @@
 
     <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.ActionBar">
         <item name="android:windowTitleSize">85dp</item>
-        <item name="android:logo">@drawable/actionbar_logo</item>
-        <item name="android:icon">@drawable/actionbar_logo</item>
-        <item name="android:titleTextStyle">@style/Widget.Styled.ActionBar.Title</item>
-        <item name="android:subtitleTextStyle">@style/Widget.Styled.ActionBar.Subtitle</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="logo">@drawable/actionbar_logo</item>
+        <item name="icon">@drawable/actionbar_logo</item>
+        <item name="titleTextStyle">@style/Widget.Styled.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/Widget.Styled.ActionBar.Subtitle</item>
+        <item name="background">@android:color/transparent</item>
     </style>
 
     <style name="Widget.Styled.ActionBar.Dark" parent="Widget.Sherlock.ActionBar">
-        <item name="android:background">@color/channel_actionbar_bg</item>
-        <item name="android:logo">@drawable/actionbar_logo</item>
+        <item name="background">@color/channel_actionbar_bg</item>
+        <item name="logo">@drawable/actionbar_logo</item>
         <item name="android:icon">@drawable/actionbar_logo</item>
-        <item name="android:titleTextStyle">@style/Widget.Styled.ActionBar.Title.Dark</item>
-        <item name="android:subtitleTextStyle">@style/Widget.Styled.ActionBar.Subtitle.Dark</item>
-        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_dark</item>
+        <item name="titleTextStyle">@style/Widget.Styled.ActionBar.Title.Dark</item>
+        <item name="subtitleTextStyle">@style/Widget.Styled.ActionBar.Subtitle.Dark</item>
     </style>
 
     <style name="Widget.Styled.ActionBar.Title.Dark" parent="Widget">
@@ -83,12 +73,11 @@
     </style>
 
     <style name="AppTheme.DarkActionBar" parent="Theme.Sherlock.Light.DarkActionBar">
-        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar.Dark</item>
-        <item name="android:homeAsUpIndicator">@color/tranparent</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar.Dark</item>
+        <item name="homeAsUpIndicator">@color/tranparent</item>
         <item name="sdlDialogStyle">@style/DialogStyleLight.Custom</item>
         <item name="android:editTextStyle">@style/EditTextAppTheme</item>
         <item name="selectableItemBackground">@drawable/selectable_item_dark</item>
-        <item name="android:selectableItemBackground">@drawable/selectable_item_dark</item>
     </style>
 
     <style name="Widget.Styled.ActionBar.MenuItem" parent="Widget">

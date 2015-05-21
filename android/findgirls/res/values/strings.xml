@@ -406,7 +406,7 @@
     <string name="str_video_duration" formatted="false">时长：%02d:%02d</string>
     <string name="str_video_duration_long" formatted="false">时长：%02d:%02d:%02d</string>
 
-    <string name="str_exit_app">退出网医</string>
+    <string name="str_exit_app">退出程序</string>
     <string name="str_exit_account">退出登录</string>
     <string name="str_exit_tips">再次点击退出网医</string>
     <string name="channel_number" formatted="false">频道号：%d</string>
